@@ -94,7 +94,7 @@ You can answer with letters ("1a, 2b, 3a") or just describe it. It would also he
 
 ## The principle
 
-From Book 1, chapter 1, "What do you want?":
+The principles:
 
 1. A want is a feeling with a direction. Understand it before you write a plan.
 2. While the want is unclear, do not solve. Show the readings, the tensions, and the one question that changes the picture.

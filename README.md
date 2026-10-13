@@ -40,7 +40,7 @@ Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not inst
 
 ## Where these come from
 
-Each skill is one practice from my book, Book 1, which is about managing AI when you never trained as a manager. Each skill names the book principles it uses, by chapter and number, so you can see the reasoning and disagree with it.
+Each skill is one practice I use every day to run my work with AI agents. Each skill states the principles behind it, so you can see the reasoning and disagree with it.
 
 ## Install
 
@@ -50,14 +50,14 @@ Pick one. Installing two ways gives you every skill twice.
 
 ```bash
 claude plugin marketplace add nadavnaveh/skills
-claude plugin install nadav-skills@nadavnaveh
+claude plugin install nadavnaveh-skills@nadavnaveh
 ```
 
 Or, from inside a session:
 
 ```
 /plugin marketplace add nadavnaveh/skills
-/plugin install nadav-skills@nadavnaveh
+/plugin install nadavnaveh-skills@nadavnaveh
 ```
 
 Updates arrive when I release. The skills are read-only.
@@ -84,7 +84,6 @@ Then type `/what-do-i-want` followed by what you want, or just ask for something
 
 ## Credits
 
-- The habit of asking only the few questions whose answers change the plan, before acting, owes a debt to Matt Pocock's grilling skill ([mattpocock/skills](https://github.com/mattpocock/skills), MIT). The repo layout follows his too. The text and the method here are mine.
 - Built on the [Agent Skills](https://code.claude.com/docs/en/skills) format and the Claude Code plugin format.
 
 ## License

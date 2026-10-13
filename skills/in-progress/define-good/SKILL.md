@@ -10,7 +10,7 @@ Status: stub. Not ready to use.
 
 Pain: the agent says it is done, and you cannot tell whether it is good.
 
-Planned shape (Book 1, chapter 5):
+Planned shape:
 - Every task gets a success test. Not every test needs a number.
 - Separate three kinds of good: true to what you meant, works for the audience, true about the world.
 - When it is taste, turn "no" into "no, because", and the because into a rule you can reuse.

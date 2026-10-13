@@ -10,7 +10,7 @@ Status: stub. Not ready to use.
 
 Pain: the agent did not fail because it is weak. It was never in the room.
 
-Planned shape (Book 1, chapter 2):
+Planned shape:
 - Before handing off, list the goal, who meets the result, what came before, the constraints, one example of yes and one of no, and the local words the agent cannot know.
 - Bring the minimum that is enough: the source of truth, not everything.
 - A decision travels with its why.

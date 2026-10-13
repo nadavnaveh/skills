@@ -10,7 +10,7 @@ Status: stub. Not ready to use.
 
 Pain: one big ask, one big mess.
 
-Planned shape (Book 1, chapters 3 and 4):
+Planned shape:
 - Outcome, then the parts, then what each part needs from another.
 - Each step names its input, what it hands on, and how you check it.
 - An open question stays open. Never invent a value to finish the plan.

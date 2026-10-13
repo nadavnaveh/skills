@@ -7,7 +7,7 @@ description: Turns a vague want into one clear statement with a done-test, befor
 
 The agent did exactly what you asked, and it was not what you wanted. The ask was a feeling with a direction, and nobody wrote down where it ends. This skill turns the feeling into one statement and a test before any work starts.
 
-## The principles (Book 1, chapter 1, "What do you want?")
+## The principles
 1. A want is a feeling with a direction. Understand it before you write a plan.
 2. While the want is unclear, do not solve. Show the readings, the tensions, and the one question that changes the picture.
 3. Your options are guesses, not the whole space. Say so, and let the person answer in their own words.
