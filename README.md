@@ -18,6 +18,12 @@ The agent was not weak. It was never in the room. Your goal, your audience, what
 
 **`/into-the-room`** (draft, coming next) checks what is in your head and not in the agent's context before you hand off.
 
+### "The agent said it was done, and it wasn't."
+
+"Done" meant "I stopped working", not "it works". Nobody said what works means, so the agent picked a finish line it could reach.
+
+**[`/done-test`](./skills/done-test/SKILL.md)** writes one to three yes/no checks before the work starts, then runs each one at the end and reports pass, fail or not run, with the evidence. No "done" without them. [Docs and a real example](./docs/skills/done-test.md).
+
 ### "It says it's done. Is it good?"
 
 If you did not decide what good means before the work, you will decide it afterwards, by feel, and argue with the agent about it.
