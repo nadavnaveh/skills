@@ -1,0 +1,13 @@
+{
+  "name": "nadav-skills",
+  "version": "0.1.0",
+  "description": "Small skills for anyone who builds with AI, coders and non-coders. Each one fixes a failure everyone has had with an agent.",
+  "author": {
+    "name": "Nadav Naveh"
+  },
+  "license": "MIT",
+  "keywords": ["skills", "agents", "intent", "context", "delegation", "management"],
+  "skills": [
+    "./skills/what-do-i-want"
+  ]
+}

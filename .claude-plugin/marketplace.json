@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "nadavnaveh",
+  "owner": {
+    "name": "Nadav Naveh"
+  },
+  "description": "Nadav Naveh's skills for running AI agents like a company: know what you want, bring the right context, define good, and know when to step in.",
+  "plugins": [
+    {
+      "name": "nadav-skills",
+      "source": "./",
+      "description": "Small skills for anyone who builds with AI, coders and non-coders. Each one fixes a failure everyone has had with an agent.",
+      "category": "productivity",
+      "keywords": ["skills", "agents", "intent", "context", "delegation", "management"]
+    }
+  ]
+}
