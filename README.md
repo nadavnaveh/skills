@@ -28,7 +28,7 @@ The agent was not weak. It was never in the room. Your goal, your audience, what
 
 More agents do not make you faster until you can see what depends on what. The number of agents is an output of the plan, not the start of it.
 
-**[`/gantt`](./skills/gantt/SKILL.md)** turns one goal into tickets, marks what each one needs from the others, and draws a Gantt chart: the critical path, what can run in parallel right now, and what waits on whom.
+**[`/to-gantt`](./skills/to-gantt/SKILL.md)** takes whatever you have (a goal, a list of tasks, notes, a document) and turns it into tickets, marks what each one needs from the others, and draws a Gantt chart: the critical path, what can run in parallel right now, and what waits on whom.
 
 ### "It says it's done. Is it good?"
 

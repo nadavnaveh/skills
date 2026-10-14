@@ -1,6 +1,6 @@
 {
   "name": "nadavnaveh-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Small skills for anyone who builds with AI, coders and non-coders. Each one fixes a failure everyone has had with an agent.",
   "author": {
     "name": "Nadav Naveh"
@@ -18,6 +18,6 @@
   "skills": [
     "./skills/what-do-i-want",
     "./skills/done-test",
-    "./skills/gantt"
+    "./skills/to-gantt"
   ]
 }
