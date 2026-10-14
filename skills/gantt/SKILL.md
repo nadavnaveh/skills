@@ -1,6 +1,6 @@
 ---
 name: gantt
-description: Turns one goal into tickets, marks what depends on what, and draws a Gantt chart that shows which agents can run in parallel and which must wait. Fixes "I run several agents and they wait on each other, redo each other's work, or I lose track of who does what." Use when a goal is bigger than one task, when you are about to open more than one agent or session, when the user asks for a plan, a roadmap, a timeline or "what can run in parallel", or on /gantt.
+description: Turns one goal, or whatever you already have (notes, a to-do list, a chat, a document, a backlog), into tickets, marks what depends on what, and draws a Gantt chart that shows which agents can run in parallel and which must wait. Fixes "I run several agents and they wait on each other, redo each other's work, or I lose track of who does what." Use when a goal is bigger than one task, when you are about to open more than one agent or session, when the user asks for a plan, a roadmap, a timeline or "what can run in parallel", or on /gantt.
 ---
 
 # Gantt
@@ -13,7 +13,7 @@ You opened three agents. Two did the same thing, one waited for something nobody
 3. The dependencies decide the speed. What can run at the same time, runs. What waits, waits for something named.
 
 ## Steps
-1. Write the goal in one sentence, with how you will know it is done. If it is unclear, ask first (one to three questions), and do not plan a guess.
+1. Start from where the user is. If they gave a goal, use it. If they gave material (notes, a to-do list, a chat, a document, a backlog, a messy plan), read it first and pull out the goal and the work already in it; keep their words. Then write the goal in one sentence, with how you will know it is done. If it is unclear, ask first (one to three questions), and do not plan a guess.
 2. Break it into tickets. Each one gets: an id (T1, T2…), a title, a done-test a stranger could check yes or no, a size (S = under an hour, M = a few hours, L = a day; split anything bigger), and who does it (an agent, a person, or the owner).
 3. Mark dependencies: for each ticket, which tickets must finish first, and what exactly it receives from them. A dependency you cannot name is not one.
 4. Draw the Gantt as a Mermaid `gantt` block (it renders on GitHub, in Notion and in most editors), with one section per lane, so tickets in different lanes run at the same time. Under it, the same plan as a plain table: ticket · lane · needs · done-test.
