@@ -1,14 +1,23 @@
 {
   "name": "nadavnaveh-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Small skills for anyone who builds with AI, coders and non-coders. Each one fixes a failure everyone has had with an agent.",
   "author": {
     "name": "Nadav Naveh"
   },
   "license": "MIT",
-  "keywords": ["skills", "agents", "intent", "context", "delegation", "management"],
+  "keywords": [
+    "skills",
+    "agents",
+    "intent",
+    "context",
+    "delegation",
+    "management",
+    "planning"
+  ],
   "skills": [
     "./skills/what-do-i-want",
-    "./skills/done-test"
+    "./skills/done-test",
+    "./skills/gantt"
   ]
 }

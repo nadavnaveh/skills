@@ -24,6 +24,12 @@ The agent was not weak. It was never in the room. Your goal, your audience, what
 
 **[`/done-test`](./skills/done-test/SKILL.md)** writes one to three yes/no checks before the work starts, then runs each one at the end and reports pass, fail or not run, with the evidence. No "done" without them. [Docs and a real example](./docs/skills/done-test.md).
 
+### "I run several agents, and they wait on each other or redo each other's work."
+
+More agents do not make you faster until you can see what depends on what. The number of agents is an output of the plan, not the start of it.
+
+**[`/gantt`](./skills/gantt/SKILL.md)** turns one goal into tickets, marks what each one needs from the others, and draws a Gantt chart: the critical path, what can run in parallel right now, and what waits on whom.
+
 ### "It says it's done. Is it good?"
 
 If you did not decide what good means before the work, you will decide it afterwards, by feel, and argue with the agent about it.
