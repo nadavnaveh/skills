@@ -4,6 +4,14 @@ You use AI. I run it like a company.
 
 These are the skills I use to manage the agents that run my work. Each one is small, and each one fixes a failure you have probably already had. They work the same whether you write code or not.
 
+**Install in one line** (Claude Code, Codex, Cursor, Gemini CLI and most other agents):
+
+```bash
+npx skills@latest add nadavnaveh/skills -g -y
+```
+
+Or just tell your agent: *"Install the skills from github.com/nadavnaveh/skills."* Then type `/to-gantt`, `/what-do-i-want` or `/done-test`.
+
 ## The failures, and the skill for each
 
 ### "It did exactly what I asked, and it's not what I wanted."
@@ -56,45 +64,27 @@ Each skill is one practice I use every day to run my work with AI agents. Each s
 
 ## Install
 
-Pick one. Installing two ways gives you every skill twice.
+Pick one way. Installing two ways gives you every skill twice.
 
-### 1. Claude Code plugin
+### Any agent: `npx skills` (recommended)
 
 ```bash
-claude plugin marketplace add nadavnaveh/skills
-claude plugin install nadavnaveh-skills@nadavnaveh
+npx skills@latest add nadavnaveh/skills -g -y                 # all skills, every agent it finds
+npx skills@latest add nadavnaveh/skills -s to-gantt -g -y     # one skill
 ```
 
-Or, from inside a session:
+**Updates:** `npx skills@latest update -g -y` pulls the newest versions. No git.
+
+### Claude Code plugin
 
 ```
 /plugin marketplace add nadavnaveh/skills
 /plugin install nadavnaveh-skills@nadavnaveh
 ```
 
-Updates arrive when I release. The skills are read-only.
+**Updates:** in `/plugin`, open Marketplaces → `nadavnaveh` and turn on auto-update, so new skills and fixes arrive by themselves. Or run `/plugin marketplace update nadavnaveh`.
 
-### 2. Codex, Cursor, Gemini CLI and any other agent, with `npx skills`
-
-```bash
-npx skills@latest add nadavnaveh/skills
-```
-
-One skill only, for example: `npx skills@latest add nadavnaveh/skills -s to-gantt`. Add `-a codex` or `-a claude-code` to pick the agent.
-
-This copies editable skill files into your project and works with Claude Code, Codex, Cursor and other agents that read `SKILL.md` files.
-
-### 3. Clone
-
-```bash
-git clone https://github.com/nadavnaveh/skills.git
-mkdir -p ~/.claude/skills
-ln -s "$PWD/skills/skills/what-do-i-want" ~/.claude/skills/what-do-i-want
-```
-
-Copy or link any skill folder into your agent's skills folder.
-
-Then type `/what-do-i-want` followed by what you want, or just ask for something vague and let the agent reach for it.
+Then type `/to-gantt` followed by your list, or `/what-do-i-want` followed by what you want, or just ask and let the agent reach for the right skill.
 
 ## Credits
 
