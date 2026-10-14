@@ -74,11 +74,13 @@ Or, from inside a session:
 
 Updates arrive when I release. The skills are read-only.
 
-### 2. Any agent, with `npx skills`
+### 2. Codex, Cursor, Gemini CLI and any other agent, with `npx skills`
 
 ```bash
 npx skills@latest add nadavnaveh/skills
 ```
+
+One skill only, for example: `npx skills@latest add nadavnaveh/skills -s to-gantt`. Add `-a codex` or `-a claude-code` to pick the agent.
 
 This copies editable skill files into your project and works with Claude Code, Codex, Cursor and other agents that read `SKILL.md` files.
 
