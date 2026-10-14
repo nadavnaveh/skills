@@ -18,11 +18,12 @@ You opened three agents. Two did the same thing, one waited for something nobody
 3. **Make tickets.** One per piece of work, small enough for one agent or person in one go. Each gets an id (T1, T2…), the user's own words as its title, a size (S under an hour, M a few hours, L a day; split anything bigger), an owner, and a done-test a stranger could check yes or no.
 4. **Mark dependencies.** For each ticket: which tickets must finish first, and what it receives from them. A dependency you cannot name is not one. Two tickets that change the same thing are not parallel.
 5. **Draw the Gantt** in the form that fits where the user is:
-   - In a terminal or chat, draw it as text bars, one row per ticket, so it reads at a glance:
+   - In a terminal or chat, draw it as text bars, one row per ticket, so it reads at a glance. Give each time slot the same width (2 to 4 characters), put the time labels on a header line aligned over their slots, and keep each row short enough not to wrap:
      ```
-     T1 Write copy     ████░░░░░░  Mon-Tue
-     T2 Pick photos    ██░░░░░░░░  Mon
-     T3 Build page     ░░░░████░░  Wed-Thu   needs T1, T2
+                       Mon Tue Wed Thu
+     T1 Write copy     ███ ███ ░░░ ░░░
+     T2 Pick photos    ███ ░░░ ░░░ ░░░
+     T3 Build page     ░░░ ░░░ ███ ███   needs T1, T2
      ```
    - Where it renders (GitHub, Notion, most editors), also give a Mermaid `gantt` block with one section per lane.
 6. **Name three things under the chart:**
