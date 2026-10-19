@@ -27,6 +27,7 @@
     "./skills/token-savers",
     "./skills/prompt-upgrades",
     "./skills/subagent-jobs",
-    "./skills/answer-checks"
+    "./skills/answer-checks",
+    "./skills/build-an-eval"
   ]
 }

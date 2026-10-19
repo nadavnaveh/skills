@@ -110,6 +110,12 @@ The agent sounds just as sure when it guessed as when it checked, so asking "are
 
 **[`/answer-checks`](./skills/answer-checks/SKILL.md)** checks an answer before you use it in five ways: it opens the source, makes the agent argue against itself, asks a fresh session that never saw the answer, runs the method on a case with a known result, and sets how hard to check by what an error would cost.
 
+### "I changed the prompt, and I can't tell if it got better or worse."
+
+You tried the change on one task and judged it by feel. One good answer can hide the two tasks it broke.
+
+**[`/build-an-eval`](./skills/build-an-eval/SKILL.md)** turns ten of your real past tasks into an `evals/` folder, writes the right answer for each one before any run, and scores the agent pass or fail out of ten on every change, so a drop shows before you ship it.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
