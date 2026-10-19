@@ -22,6 +22,7 @@
     "./skills/agent-patterns",
     "./skills/claude-md-rules",
     "./skills/drift-check",
-    "./skills/plan-first"
+    "./skills/plan-first",
+    "./skills/injection-guards"
   ]
 }

@@ -80,6 +80,12 @@ The agent began editing before anyone agreed on the goal, the files it would tou
 
 **[`/plan-first`](./skills/plan-first/SKILL.md)** checks whether the task needs a plan, maps the code, agrees the goal, numbers every file, marks the risky steps for your yes, and takes a big refactor one approved step at a time.
 
+### "A web page told my agent what to do, and it did it."
+
+The agent reads pages, emails and files as text, and a hidden line in that text can look just like an order. If the agent can reach your keys, run any command and send without asking, that one line is enough.
+
+**[`/injection-guards`](./skills/injection-guards/SKILL.md)** sets five guards: it reads pages as data and not as orders, cannot see your keys, runs only the commands you named, asks before it emails, posts or pays, and works inside a sandbox, then it tests each guard and shows you the result.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
