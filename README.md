@@ -92,6 +92,12 @@ Every message sends the whole conversation again: each file read, each long answ
 
 **[`/token-savers`](./skills/token-savers/SKILL.md)** keeps the session small with five habits: clear between tasks, search before reading, read only the lines around the hit, ask for the length you need, and keep the opening the same so it is cached.
 
+### "I typed one line and got a generic answer back."
+
+The agent filled every gap in that line with a guess: who reads it, what shape it takes, what actually broke. Strong users close those gaps before the agent starts.
+
+**[`/prompt-upgrades`](./skills/prompt-upgrades/SKILL.md)** upgrades your request with five habits: talk instead of typing, let the agent ask who it is for, pick one of three options, give the shape of the answer, and paste the real source instead of your summary.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

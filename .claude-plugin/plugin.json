@@ -24,6 +24,7 @@
     "./skills/drift-check",
     "./skills/plan-first",
     "./skills/injection-guards",
-    "./skills/token-savers"
+    "./skills/token-savers",
+    "./skills/prompt-upgrades"
   ]
 }
