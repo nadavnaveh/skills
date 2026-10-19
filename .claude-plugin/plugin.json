@@ -29,6 +29,7 @@
     "./skills/subagent-jobs",
     "./skills/answer-checks",
     "./skills/build-an-eval",
-    "./skills/bug-triage"
+    "./skills/bug-triage",
+    "./skills/corrected-twice"
   ]
 }

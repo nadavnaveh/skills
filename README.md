@@ -122,6 +122,12 @@ A finding reads like a fact, so it gets fixed like one, even when nobody made it
 
 **[`/bug-triage`](./skills/bug-triage/SKILL.md)** reproduces every finding, has a second agent try to disprove it, merges the ones with one cause, writes what a user sees when it breaks, and fixes each real bug only after a test for it fails first.
 
+### "I keep correcting the same thing."
+
+Each correction patches one output, so the cause stays where it was: a rule nobody wrote down, or a step in the plan that was wrong or too big. A third fix to the output won't land either.
+
+**[`/corrected-twice`](./skills/corrected-twice/SKILL.md)** stops at the second correction, writes it as a rule in CLAUDE.md, finds the step in the plan that went wrong, redoes it on one file with a check, and starts a fresh session with the new rule loaded.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
