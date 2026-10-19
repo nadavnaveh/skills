@@ -104,6 +104,12 @@ Everything the agent reads stays in its window and is sent again on every turn. 
 
 **[`/subagent-jobs`](./skills/subagent-jobs/SKILL.md)** sends five reading jobs (search code, read long logs, run the tests, review with fresh eyes, research) to a subagent with its own clean window, and takes back only a short summary that points to its sources.
 
+### "It sounded right, I used it, and it was wrong."
+
+The agent sounds just as sure when it guessed as when it checked, so asking "are you sure?" only gets a yes. An answer agreeing with itself is not proof, and only a check from outside the conversation can catch the error.
+
+**[`/answer-checks`](./skills/answer-checks/SKILL.md)** checks an answer before you use it in five ways: it opens the source, makes the agent argue against itself, asks a fresh session that never saw the answer, runs the method on a case with a known result, and sets how hard to check by what an error would cost.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
