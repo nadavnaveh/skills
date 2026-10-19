@@ -20,6 +20,7 @@
     "./skills/done-test",
     "./skills/to-gantt",
     "./skills/claude-md-rules",
-    "./skills/drift-check"
+    "./skills/drift-check",
+    "./skills/plan-first"
   ]
 }
