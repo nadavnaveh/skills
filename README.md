@@ -10,7 +10,7 @@ These are the skills I use to manage the agents that run my work. Each one is sm
 npx skills@latest add nadavnaveh/skills -g -y
 ```
 
-Or just tell your agent: *"Install the skills from github.com/nadavnaveh/skills."* Then type `/to-gantt`, `/what-do-i-want` or `/done-test`.
+Or just tell your agent: *"Install the skills from github.com/nadavnaveh/skills."* Then type `/to-gantt`, `/what-do-i-want`, `/done-test` or `/agent-patterns`.
 
 ## The failures, and the skill for each
 
@@ -37,6 +37,12 @@ The agent was not weak. It was never in the room. Your goal, your audience, what
 More agents do not make you faster until you can see what depends on what. The number of agents is an output of the plan, not the start of it.
 
 **[`/to-gantt`](./skills/to-gantt/SKILL.md)** takes whatever you have (a goal, a list of tasks, notes, a document) and turns it into tickets, marks what each one needs from the others, and draws a Gantt chart: the critical path, what can run in parallel right now, and what waits on whom.
+
+### "I opened five agents and got five messes."
+
+The job's shape decides how agents should work together: side by side, arguing, checking each other, in a chain, or under a manager.
+
+**[`/agent-patterns`](./skills/agent-patterns/SKILL.md)** reads the shape of your task, picks one of five patterns (Parallel, Debate, Pair, Pipeline, Manager), says why, and runs it with subagents: one owner per file, every result checked before it counts.
 
 ### "It says it's done. Is it good?"
 
