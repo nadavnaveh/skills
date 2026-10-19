@@ -86,6 +86,12 @@ The agent reads pages, emails and files as text, and a hidden line in that text 
 
 **[`/injection-guards`](./skills/injection-guards/SKILL.md)** sets five guards: it reads pages as data and not as orders, cannot see your keys, runs only the commands you named, asks before it emails, posts or pays, and works inside a sandbox, then it tests each guard and shows you the result.
 
+### "My tokens run out, and the session gets slower the longer I work."
+
+Every message sends the whole conversation again: each file read, each long answer and each old task. So what you add once keeps costing on every turn after it.
+
+**[`/token-savers`](./skills/token-savers/SKILL.md)** keeps the session small with five habits: clear between tasks, search before reading, read only the lines around the hit, ask for the length you need, and keep the opening the same so it is cached.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
