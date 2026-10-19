@@ -28,6 +28,7 @@
     "./skills/prompt-upgrades",
     "./skills/subagent-jobs",
     "./skills/answer-checks",
-    "./skills/build-an-eval"
+    "./skills/build-an-eval",
+    "./skills/bug-triage"
   ]
 }

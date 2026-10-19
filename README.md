@@ -116,6 +116,12 @@ You tried the change on one task and judged it by feel. One good answer can hide
 
 **[`/build-an-eval`](./skills/build-an-eval/SKILL.md)** turns ten of your real past tasks into an `evals/` folder, writes the right answer for each one before any run, and scores the agent pass or fail out of ten on every change, so a drop shows before you ship it.
 
+### "The agent found ten bugs, and most of them were not real."
+
+A finding reads like a fact, so it gets fixed like one, even when nobody made it happen. Some are guesses, some are expected behavior, and several are one bug reported three times.
+
+**[`/bug-triage`](./skills/bug-triage/SKILL.md)** reproduces every finding, has a second agent try to disprove it, merges the ones with one cause, writes what a user sees when it breaks, and fixes each real bug only after a test for it fails first.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
