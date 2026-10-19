@@ -25,6 +25,7 @@
     "./skills/plan-first",
     "./skills/injection-guards",
     "./skills/token-savers",
-    "./skills/prompt-upgrades"
+    "./skills/prompt-upgrades",
+    "./skills/subagent-jobs"
   ]
 }
