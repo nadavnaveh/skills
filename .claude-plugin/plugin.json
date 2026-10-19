@@ -18,6 +18,7 @@
   "skills": [
     "./skills/what-do-i-want",
     "./skills/done-test",
-    "./skills/to-gantt"
+    "./skills/to-gantt",
+    "./skills/claude-md-rules"
   ]
 }

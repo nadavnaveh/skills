@@ -62,6 +62,24 @@ You either watch every step or find out too late. A failure once is a retry. The
 
 **`/when-to-step-in`** (draft) sets the checkpoints where you come back in.
 
+### "I keep telling it the same things every session."
+
+Every session starts fresh, and the only thing the agent is sure to read is CLAUDE.md. If the file is vague, too long or out of date, your corrections are gone by the next morning.
+
+**[`/claude-md-rules`](./skills/claude-md-rules/SKILL.md)** trims your CLAUDE.md to specific lines, gives each rule its reason, writes down the build, test and lint commands it has seen run, names what to leave alone, and adds a rule whenever you correct the agent on the same thing twice.
+
+### "It started well, and somewhere along the way it stopped doing what I asked."
+
+Long sessions drift a little at a time: the same bug comes back, files you never named get edited, answers grow without saying more, and early decisions fade. Each step looks reasonable on its own, so nobody notices until the agent says "done" and nothing was checked.
+
+**[`/drift-check`](./skills/drift-check/SKILL.md)** checks a session for the five signs of drift (same fix twice, off task, padding, lost decisions, says done), shows the evidence for each one it finds, and steers it back with one move per sign.
+
+### "It started changing things before I knew what it was going to do."
+
+The agent began editing before anyone agreed on the goal, the files it would touch or the step that cannot be undone. By the time you saw the change, it had spread across the project, or something was already gone.
+
+**[`/plan-first`](./skills/plan-first/SKILL.md)** checks whether the task needs a plan, maps the code, agrees the goal, numbers every file, marks the risky steps for your yes, and takes a big refactor one approved step at a time.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
