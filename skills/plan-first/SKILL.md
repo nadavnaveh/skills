@@ -1,6 +1,6 @@
 ---
 name: plan-first
-description: Decides whether a task needs a plan before any change, then writes that plan and waits for your yes. The plan agrees the goal in one checkable line, numbers every file it will touch, marks the steps that are hard to undo, maps an unfamiliar codebase first, and splits a big refactor into steps you approve one at a time. Fixes "It started changing things before I knew what it was going to do." Use when one change touches many files (a rename, a moved function, a changed name used everywhere), when the request is vague ("make it faster", "clean this up", "make it better"), when a step is hard to undo (deleting files or data, dropping a table, a database migration, a force push, a deploy, sending messages), when the agent starts in a codebase it has not read yet, and before a big refactor. Also on /plan-first.
+description: Decides whether a task needs a plan before any change, writes that plan and waits for your yes. It maps a new codebase, agrees the goal, numbers every file, marks the steps that are hard to undo, and splits a big refactor into steps you approve one at a time. Fixes "It started changing things before I knew what it was going to do." Use when one change touches many files, when the goal is vague ("make it faster"), when a step is hard to undo (deleting data, dropping a table, a deploy), when the agent starts in a codebase it has not read, or before a big refactor. Also on /plan-first.
 ---
 
 # Plan first
@@ -18,22 +18,16 @@ This skill checks whether the task needs a plan, writes one that names things, a
 
 ## Steps
 1. Check the five signs: many files, unclear goal, hard to undo, new codebase, big refactor. If none apply, say "No plan needed" in one line and do the work.
-2. Plan without editing anything. In Claude Code, press Shift+Tab until the mode shows plan mode: the agent can read and propose, but not change files. Elsewhere, say plainly that nothing will be edited until the plan is approved.
-3. **New codebase:** read it folder by folder before planning. Write a short map: what each main folder holds, where the program starts, and how the tests are run. If the project has no CLAUDE.md, offer to save the map there (in Claude Code, /init writes a starting one).
-4. **Unclear goal:** ask the one question that decides it. "Faster" becomes "Faster at what: the page load or the test run? From how long to how long?" Write the answer as one line a stranger could check, such as "the home page loads in under 1 second". Do not plan the work until that line is agreed.
-5. **Many files:** search the whole project for every place the change reaches, not only the files already open. List them numbered, with what changes in each. Say how many you found and how you searched. Example: renaming User to Member, file 1, file 2, file 3, each with its change.
-6. **Hard to undo:** walk the plan step by step and mark every step that cannot easily be reversed (deleting files or data, dropping a table, a migration, a force push, a deploy, sending anything to people). Mark each one "ask", and write the way back: the backup, the commit, or "there is none".
-7. **Big refactor:** split it into small steps, each one leaving the code working with the tests passing (for example "extract auth into its own module"). Number them.
-8. Show the whole plan and ask "Go with this plan?" Start only after a yes.
-9. Work in the plan's order and tick each numbered item as it is done.
-   - At a step marked "ask", stop and ask again, right before it runs. Run the safe steps before it as normal.
-   - In a big refactor, after each step show what changed and the test result, commit it with git so it can be undone on its own, and ask for a yes before the next step.
-10. If the work finds something the plan missed (one more file, a new risk, a goal that no longer fits), stop, update the plan, show what changed, and ask again. Never widen the plan quietly.
-11. At the end, report each numbered item as done, skipped (with why) or changed (with what), and check the result against the goal line from step 4.
+2. Plan without editing anything. In Claude Code, press Shift+Tab until the mode shows plan mode; elsewhere, say plainly that nothing will be edited yet. Build the plan with the steps below that apply, show it, and ask "Go with this plan?" Start only after a yes.
+3. **New codebase:** read it folder by folder. Write a short map: what each main folder holds, where the program starts, and how the tests run. If the project has no CLAUDE.md, offer to save the map there (in Claude Code, /init writes a starting one).
+4. **Unclear goal:** ask the one question that decides it. "Faster" becomes "Faster at what: the page load or the test run? From how long to how long?" Write the answer as one line a stranger could check, such as "the home page loads in under 1 second". Plan the work only after that line is agreed.
+5. **Many files:** search the whole project for every place the change reaches, not only the files already open. List them numbered, with what changes in each, and say how many you found. Example: renaming User to Member lists 3 files, each with its change. Tick each one as it is done.
+6. **Hard to undo:** walk the plan and mark every step that cannot easily be reversed (deleting files or data, dropping a table, a migration, a force push, a deploy, sending anything to people) with "ask". Run the safe steps before it as normal. At the "ask" step, stop and ask again, right before it runs.
+7. **Big refactor:** split it into small numbered steps, each one leaving the code working with the tests passing (for example "extract auth into its own module"). After each step, show what changed and the test result, and ask for a yes before the next. A git commit per step makes each one easy to undo.
 
 ## Rules
 - No edits before a yes to the plan.
-- A step that is hard to undo gets its own yes, at the moment it runs.
+- A step that is hard to undo gets its own yes at the moment it runs, with the way back named: the backup, the commit, or "there is none".
 - A file that is not on the list is not touched without saying so first.
+- If the work finds something the plan missed, stop, update the plan and ask again. Never widen it quietly.
 - Ask when it is unclear. A guess is not a goal.
-- One refactor step at a time, each one working and committed before the next.
