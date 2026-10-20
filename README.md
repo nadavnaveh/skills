@@ -248,6 +248,12 @@ Agent code looks clean and sure of itself, so it gets skimmed instead of read. A
 
 **[`/review-habits`](./skills/review-habits/SKILL.md)** reviews agent code with five habits: it keeps the change small, reads every line of the diff, runs it on your machine, tries empty, huge and odd inputs, and lists what no test covers, then reports each one as pass, fail or not run, with the evidence.
 
+### "I connected my tools to the agent, and I don't know what it can reach or what it did with them."
+
+An MCP server hands the agent its whole list of tools at once, and nobody chose which ones it may use. Then the calls and their answers pass by unseen, so a delete looks just like a search.
+
+**[`/mcp-parts`](./skills/mcp-parts/SKILL.md)** walks the five parts of MCP: it lists every tool a server exposes, shows each call and the answer that came back, sets allow, ask or deny for each tool, and adds one shared server that all your agents use.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

@@ -50,6 +50,7 @@
     "./skills/write-skills",
     "./skills/data-leaks",
     "./skills/automate-questions",
-    "./skills/review-habits"
+    "./skills/review-habits",
+    "./skills/mcp-parts"
   ]
 }
