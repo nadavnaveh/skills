@@ -302,6 +302,12 @@ What it learned stayed in a session that ended, or went into one giant notes fil
 
 **[`/agent-wiki`](./skills/agent-wiki/SKILL.md)** files what the agent reads into a wiki folder with one numbered page per topic and a source cited for every claim, edits the right page when you hand it a new article, keeps an index.md that lists every page, and deletes the pages that went stale in a weekly review, after your yes.
 
+### "The tests were green, and the code was still a mess."
+
+Tests check what the code does, not how it is built, so a screen that reads the database directly passes just like one that goes through the API. Files keep growing, the same logic gets copied and names like data2 stay, and no test ever turns red.
+
+**[`/past-green-tests`](./skills/past-green-tests/SKILL.md)** runs four design checks after the tests pass (a check that blocks the UI from importing the database, a warning on files near 3,000 lines, a search for the same logic in several places and a list of names to rename), then gives a person a short list to tick: layers, names and size.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

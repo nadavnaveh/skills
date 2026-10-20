@@ -59,6 +59,7 @@
     "./skills/compact-safely",
     "./skills/tests-as-spec",
     "./skills/redact-first",
-    "./skills/agent-wiki"
+    "./skills/agent-wiki",
+    "./skills/past-green-tests"
   ]
 }
