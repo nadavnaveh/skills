@@ -296,6 +296,12 @@ A recording catches everything on the screen, not just the part you meant to sho
 
 **[`/redact-first`](./skills/redact-first/SKILL.md)** clears the screen before you record (Do Not Disturb on, extra tabs closed, fake names in place and no keys on screen), then checks the recording frame by frame for emails, keys, names, tabs and notifications, and blurs each one before you post.
 
+### "The agent read it last week, and today it knows nothing about it."
+
+What it learned stayed in a session that ended, or went into one giant notes file that nobody can search. Without a source next to each line, you cannot tell what it read from what it guessed.
+
+**[`/agent-wiki`](./skills/agent-wiki/SKILL.md)** files what the agent reads into a wiki folder with one numbered page per topic and a source cited for every claim, edits the right page when you hand it a new article, keeps an index.md that lists every page, and deletes the pages that went stale in a weekly review, after your yes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

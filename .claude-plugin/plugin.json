@@ -58,6 +58,7 @@
     "./skills/handoff-rules",
     "./skills/compact-safely",
     "./skills/tests-as-spec",
-    "./skills/redact-first"
+    "./skills/redact-first",
+    "./skills/agent-wiki"
   ]
 }
