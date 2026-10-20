@@ -308,6 +308,12 @@ Tests check what the code does, not how it is built, so a screen that reads the 
 
 **[`/past-green-tests`](./skills/past-green-tests/SKILL.md)** runs four design checks after the tests pass (a check that blocks the UI from importing the database, a warning on files near 3,000 lines, a search for the same logic in several places and a list of names to rename), then gives a person a short list to tick: layers, names and size.
 
+### "I shared my skill, and it broke the first time someone else used it."
+
+It was only tried on a demo, and a demo is picked because it works. Nobody wrote down what it got wrong, so the same miss went out with it.
+
+**[`/dogfood-first`](./skills/dogfood-first/SKILL.md)** runs it on this week's real tasks, logs one line per miss, fixes the miss that keeps coming back, runs the same tasks again to show fewer misses, and shares it only after three tested weeks.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

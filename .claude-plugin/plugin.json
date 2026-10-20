@@ -60,6 +60,7 @@
     "./skills/tests-as-spec",
     "./skills/redact-first",
     "./skills/agent-wiki",
-    "./skills/past-green-tests"
+    "./skills/past-green-tests",
+    "./skills/dogfood-first"
   ]
 }
