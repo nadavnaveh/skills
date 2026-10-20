@@ -158,6 +158,12 @@ One agent cannot hold that much at once, so the late pages get less attention an
 
 **[`/big-archive`](./skills/big-archive/SKILL.md)** splits the archive into numbered parts, reads them in parallel with one subagent per part, makes every finding cite its page, merges the lists so duplicates are gone, and opens two cited pages at random to check the citations hold.
 
+### "The answer was close, and I still had to fix it myself."
+
+The request left out the shape you wanted, who reads it and how to tell it works, so the agent guessed. It also sounds just as sure about what it never checked.
+
+**[`/prompt-ways`](./skills/prompt-ways/SKILL.md)** adds five small habits to every request: one good example, who it is for, a plan before it starts, a check it can run, and a list of what it could not confirm.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

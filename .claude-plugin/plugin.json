@@ -35,6 +35,7 @@
     "./skills/phone-rules",
     "./skills/report-endings",
     "./skills/agent-loop",
-    "./skills/big-archive"
+    "./skills/big-archive",
+    "./skills/prompt-ways"
   ]
 }
