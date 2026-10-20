@@ -338,6 +338,12 @@ It began as one big system for the whole team, so no single step got faster. Nob
 
 **[`/ai-in-business`](./skills/ai-in-business/SKILL.md)** maps one process step by step, finds the step done most often, builds a small agent for that step only, measures the hours before and after, and gives the agent a named owner with a weekly check.
 
+### "I ran the agent in a sandbox, and it could still see my keys."
+
+A sandbox limits what the agent can change, not what it can read. A key pasted in chat, printed in a log or left in a file it can open is a key it has.
+
+**[`/keys-and-agents`](./skills/keys-and-agents/SKILL.md)** keeps every key out of the chat, has you type it into hidden input that saves it to a private file, shows each session only the keys its task needs, asks for read-only keys, and has you replace a leaked key the same day.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

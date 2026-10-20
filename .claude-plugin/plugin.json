@@ -65,6 +65,7 @@
     "./skills/checkpoints",
     "./skills/long-videos",
     "./skills/hard-problems",
-    "./skills/ai-in-business"
+    "./skills/ai-in-business",
+    "./skills/keys-and-agents"
   ]
 }
