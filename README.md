@@ -236,6 +236,12 @@ Data slips out through everyday steps: a log line, a screenshot, a tool call, a 
 
 **[`/data-leaks`](./skills/data-leaks/SKILL.md)** checks the five places data leaks (logs, screen captures, prompts to tools, pages it reads and commits), closes each one, and reports each as closed, open or not checked.
 
+### "I automated it, and now I spend more time fixing it than doing it."
+
+The task did not come back often enough to be worth it, nobody could check a run, and the inputs had bad rows in them. When it broke, no alert went out and nobody owned it, so the mistakes piled up quietly.
+
+**[`/automate-questions`](./skills/automate-questions/SKILL.md)** asks five questions before anything is automated (does it repeat, can you check it, what if it fails, who owns it, is the data ready) and builds the job only when every one has an answer.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
