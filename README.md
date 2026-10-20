@@ -212,6 +212,12 @@ A rule in CLAUDE.md is a request, and late in a long session the agent can skip 
 
 **[`/hooks-to-add`](./skills/hooks-to-add/SKILL.md)** adds five hooks that run on their own and tests each one: they run the tests after each edit, block risky commands, format every file the agent writes, ping you when it needs you, and log every command it runs.
 
+### "It said the code was done, and nothing had been tested."
+
+The agent read its own change, saw that it looked right, and stopped there. But reading code is not running it, and each kind of break only shows up under its own test.
+
+**[`/tests-to-run`](./skills/tests-to-run/SKILL.md)** runs five tests before anyone says done (unit tests, a type check, lint, one real user flow clicked through like a person, and a test for every fixed bug) and reports each one as pass, fail or not run, with the output.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

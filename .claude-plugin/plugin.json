@@ -44,6 +44,7 @@
     "./skills/context-rules",
     "./skills/access-levels",
     "./skills/brief-parts",
-    "./skills/hooks-to-add"
+    "./skills/hooks-to-add",
+    "./skills/tests-to-run"
   ]
 }
