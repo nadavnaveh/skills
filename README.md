@@ -164,6 +164,12 @@ The request left out the shape you wanted, who reads it and how to tell it works
 
 **[`/prompt-ways`](./skills/prompt-ways/SKILL.md)** adds five small habits to every request: one good example, who it is for, a plan before it starts, a check it can run, and a list of what it could not confirm.
 
+### "I trusted the agent's work, and it broke the first time someone used it."
+
+The agent that did the work checks what it meant to build, not what it built, so its "it works" sounds the same whether it checked or not. Only a check from outside the agent's own word can catch the break before a user does.
+
+**[`/check-ways`](./skills/check-ways/SKILL.md)** checks the work in five ways before you trust it: it runs the tests, has a second agent review the diff, sets a gate that refuses the commit while tests fail, reads every changed line, and clicks through it the way a user would.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
