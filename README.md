@@ -182,6 +182,12 @@ Nobody wrote down where the agent must stop, so it treated a delete, a merge, a 
 
 **[`/calls-to-keep`](./skills/calls-to-keep/SKILL.md)** keeps five calls with you: you write what done means, nothing that cannot be undone runs before a backup and your yes, work merges into main only on your word, spending and keys wait for you, and you look at the release before it ships.
 
+### "The safety check broke, and the agent went ahead anyway."
+
+A guard that crashes, a test run that finds no tests and a question nobody answered all make no noise. The agent reads that silence as a yes and carries on.
+
+**[`/fail-closed`](./skills/fail-closed/SKILL.md)** makes every guard lock the door when it fails: a crashed hook blocks the action, zero tests run is not a pass, no answer means nothing ships, a command not on the list is refused, and a missing key stops the work until you answer.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

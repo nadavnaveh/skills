@@ -39,6 +39,7 @@
     "./skills/prompt-ways",
     "./skills/check-ways",
     "./skills/agent-failures",
-    "./skills/calls-to-keep"
+    "./skills/calls-to-keep",
+    "./skills/fail-closed"
   ]
 }
