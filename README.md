@@ -140,6 +140,12 @@ On a small screen you cannot review a diff or watch every step, so the agent eit
 
 **[`/phone-rules`](./skills/phone-rules/SKILL.md)** sets five rules for the road: reads run without asking, every change waits for your tap, reports come in three lines you can read while walking, a notification arrives when the job ends, and deploy is refused until you are back at your desk.
 
+### "The report said nothing new, and it never read the source."
+
+A blocked page and a quiet day look the same in a summary. The agent writes about what it got and says nothing about what it did not get.
+
+**[`/report-endings`](./skills/report-endings/SKILL.md)** makes every report list what it read, name each source that failed and why, show only what changed since the last run, list what it skipped and why, and put the one decision that needs you at the top.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

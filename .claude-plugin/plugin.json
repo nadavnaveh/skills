@@ -32,6 +32,7 @@
     "./skills/bug-triage",
     "./skills/corrected-twice",
     "./skills/code-map",
-    "./skills/phone-rules"
+    "./skills/phone-rules",
+    "./skills/report-endings"
   ]
 }
