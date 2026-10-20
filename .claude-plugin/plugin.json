@@ -56,6 +56,7 @@
     "./skills/team-roles",
     "./skills/memory-sources",
     "./skills/handoff-rules",
-    "./skills/compact-safely"
+    "./skills/compact-safely",
+    "./skills/tests-as-spec"
   ]
 }

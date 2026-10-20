@@ -284,6 +284,12 @@ Compaction replaces the whole conversation with a summary, and a summary keeps t
 
 **[`/compact-safely`](./skills/compact-safely/SKILL.md)** saves your decisions and exact numbers to decisions.md before you compact, runs /compact with a line saying what to keep, then reloads CLAUDE.md, pastes the numbers back and asks what the goal is before the work goes on.
 
+### "The agent ported the code, said it works, and it behaves differently."
+
+The agent checked that the new code looked right, not that it does what the old code did. When a test failed, nothing stopped it from changing the test instead of the code.
+
+**[`/tests-as-spec`](./skills/tests-as-spec/SKILL.md)** freezes the old test suite green, ports one module at a time, runs the same tests against the new code, compares old and new answers on the same input, and stops the agent the moment it edits a test.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
