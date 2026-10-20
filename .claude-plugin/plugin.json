@@ -41,6 +41,7 @@
     "./skills/agent-failures",
     "./skills/calls-to-keep",
     "./skills/fail-closed",
-    "./skills/context-rules"
+    "./skills/context-rules",
+    "./skills/access-levels"
   ]
 }

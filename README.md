@@ -194,6 +194,12 @@ Every message and every tool result stays in the window, and the agent carries a
 
 **[`/context-rules`](./skills/context-rules/SKILL.md)** keeps the window small with five rules: every message takes room, every tool call takes room, compact early with a keep list, send big reads to a subagent with its own clean window, and keep the opening the same so it is cached.
 
+### "I gave the agent full access on day one, and it changed things I never agreed to."
+
+Trust usually grows a step at a time, but the agent was given every permission before it had earned any of them. So the first time it got something wrong, the mistake went straight into your files, and then into what you ship.
+
+**[`/access-levels`](./skills/access-levels/SKILL.md)** gives the agent access in five levels (read only, sandbox edits, ask first, safe auto-run and production). It starts at the lowest level that does the job, moves up one level only on your word, and leaves every release for a person to sign off.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
