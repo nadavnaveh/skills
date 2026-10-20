@@ -326,6 +326,12 @@ An hour of video holds about 100,000 frames, and the agent tried to look at them
 
 **[`/long-videos`](./skills/long-videos/SKILL.md)** turns the video into a timed transcript first, searches it for the minute that matters, looks at one frame every 10 seconds, cuts a two-minute clip for a close look, and puts a timestamp on every claim in the notes.
 
+### "The agent tried one idea after another, and we are still stuck."
+
+It chased the first guess, forgot what had already failed and called the last try the answer. Nothing was written down, so the same dead ends came back and nobody could check the fix.
+
+**[`/hard-problems`](./skills/hard-problems/SKILL.md)** writes every guess down, runs one cheap test per guess, logs every try including the failures, keeps only the guess that survived and proves it with a result someone else can rerun.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

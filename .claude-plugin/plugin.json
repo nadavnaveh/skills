@@ -63,6 +63,7 @@
     "./skills/past-green-tests",
     "./skills/dogfood-first",
     "./skills/checkpoints",
-    "./skills/long-videos"
+    "./skills/long-videos",
+    "./skills/hard-problems"
   ]
 }
