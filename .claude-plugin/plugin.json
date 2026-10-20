@@ -64,6 +64,7 @@
     "./skills/dogfood-first",
     "./skills/checkpoints",
     "./skills/long-videos",
-    "./skills/hard-problems"
+    "./skills/hard-problems",
+    "./skills/ai-in-business"
   ]
 }

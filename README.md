@@ -332,6 +332,12 @@ It chased the first guess, forgot what had already failed and called the last tr
 
 **[`/hard-problems`](./skills/hard-problems/SKILL.md)** writes every guess down, runs one cheap test per guess, logs every try including the failures, keeps only the guess that survived and proves it with a result someone else can rerun.
 
+### "We added AI to the business, and nobody can say what it saved."
+
+It began as one big system for the whole team, so no single step got faster. Nobody counted the hours before, so nobody can count them after.
+
+**[`/ai-in-business`](./skills/ai-in-business/SKILL.md)** maps one process step by step, finds the step done most often, builds a small agent for that step only, measures the hours before and after, and gives the agent a named owner with a weekly check.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
