@@ -266,6 +266,12 @@ When one agent plays every role, it checks the work against what it meant to bui
 
 **[`/team-roles`](./skills/team-roles/SKILL.md)** gives each role one job: the planner breaks the goal into numbered steps, the builder writes one step at a time on a branch, the tester runs the tests and flags what fails, a fresh reviewer reads the diff, and the merge waits for your yes.
 
+### "Every new session starts from zero, and it tries what we already ruled out."
+
+The agent only knows what is written where it looks. Your reasons, what was already tried, where the last run stopped and what good looks like were all in your head or an old chat.
+
+**[`/memory-sources`](./skills/memory-sources/SKILL.md)** sets up five sources the agent reads before it starts (a CLAUDE.md that points to the rest, decision notes with their reasons, ticket history of what was tried, a progress file of where the last run stopped, and a folder of good examples) and makes it read them first.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

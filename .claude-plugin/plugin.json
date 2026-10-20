@@ -53,6 +53,7 @@
     "./skills/review-habits",
     "./skills/mcp-parts",
     "./skills/stop-signals",
-    "./skills/team-roles"
+    "./skills/team-roles",
+    "./skills/memory-sources"
   ]
 }
