@@ -33,6 +33,7 @@
     "./skills/corrected-twice",
     "./skills/code-map",
     "./skills/phone-rules",
-    "./skills/report-endings"
+    "./skills/report-endings",
+    "./skills/agent-loop"
   ]
 }

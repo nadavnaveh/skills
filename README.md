@@ -146,6 +146,12 @@ A blocked page and a quiet day look the same in a summary. The agent writes abou
 
 **[`/report-endings`](./skills/report-endings/SKILL.md)** makes every report list what it read, name each source that failed and why, show only what changed since the last run, list what it skipped and why, and put the one decision that needs you at the top.
 
+### "The agent made the change and never checked if it worked."
+
+Every agent runs the same loop: plan, act, observe, check, then stop or go again. The edit went through, so the agent felt done and skipped the check, which is the one step that shows whether it worked.
+
+**[`/agent-loop`](./skills/agent-loop/SKILL.md)** runs every task as plan, act, observe, check, and then stop or go another round, makes one change per round, and stops only on a check that passed, or after three rounds it hands back to you.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
