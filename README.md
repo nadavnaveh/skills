@@ -188,6 +188,12 @@ A guard that crashes, a test run that finds no tests and a question nobody answe
 
 **[`/fail-closed`](./skills/fail-closed/SKILL.md)** makes every guard lock the door when it fails: a crashed hook blocks the action, zero tests run is not a pass, no answer means nothing ships, a command not on the list is refused, and a missing key stops the work until you answer.
 
+### "The session got slow and forgetful, and I don't know why."
+
+Every message and every tool result stays in the window, and the agent carries all of it on every turn. When the window fills, compaction keeps a short summary and the details you did not save are gone.
+
+**[`/context-rules`](./skills/context-rules/SKILL.md)** keeps the window small with five rules: every message takes room, every tool call takes room, compact early with a keep list, send big reads to a subagent with its own clean window, and keep the opening the same so it is cached.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

@@ -40,6 +40,7 @@
     "./skills/check-ways",
     "./skills/agent-failures",
     "./skills/calls-to-keep",
-    "./skills/fail-closed"
+    "./skills/fail-closed",
+    "./skills/context-rules"
   ]
 }
