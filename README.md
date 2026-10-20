@@ -272,6 +272,12 @@ The agent only knows what is written where it looks. Your reasons, what was alre
 
 **[`/memory-sources`](./skills/memory-sources/SKILL.md)** sets up five sources the agent reads before it starts (a CLAUDE.md that points to the rest, decision notes with their reasons, ticket history of what was tried, a progress file of where the last run stopped, and a folder of good examples) and makes it read them first.
 
+### "The new agent started over, redid finished work and trusted a test nobody ran."
+
+The first agent knew what was done, what was left and what was never tested, but it was all in a session that ended. The next agent read the silence as done and began again.
+
+**[`/handoff-rules`](./skills/handoff-rules/SKILL.md)** writes one HANDOFF.md when an agent stops (what was done, what is open, what was tested and how, and who holds the task now), and the next agent reads it and checks it against git before it acts.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

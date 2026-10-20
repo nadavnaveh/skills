@@ -54,6 +54,7 @@
     "./skills/mcp-parts",
     "./skills/stop-signals",
     "./skills/team-roles",
-    "./skills/memory-sources"
+    "./skills/memory-sources",
+    "./skills/handoff-rules"
   ]
 }
