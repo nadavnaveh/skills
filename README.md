@@ -176,6 +176,12 @@ Agents fail in five known ways: they drift off the goal, sound sure when they ar
 
 **[`/agent-failures`](./skills/agent-failures/SKILL.md)** writes down the goal, the allowed files, your decisions and the check before the work starts, then watches for each of the five failures at the step where it begins and reports each one as caught or clear, with the evidence.
 
+### "The agent made a call that should have been mine."
+
+Nobody wrote down where the agent must stop, so it treated a delete, a merge, a payment and a release like any other step. By the time you saw it, the files were gone, main had changed or the money was spent.
+
+**[`/calls-to-keep`](./skills/calls-to-keep/SKILL.md)** keeps five calls with you: you write what done means, nothing that cannot be undone runs before a backup and your yes, work merges into main only on your word, spending and keys wait for you, and you look at the release before it ships.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

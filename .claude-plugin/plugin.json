@@ -38,6 +38,7 @@
     "./skills/big-archive",
     "./skills/prompt-ways",
     "./skills/check-ways",
-    "./skills/agent-failures"
+    "./skills/agent-failures",
+    "./skills/calls-to-keep"
   ]
 }
