@@ -218,6 +218,12 @@ The agent read its own change, saw that it looked right, and stopped there. But 
 
 **[`/tests-to-run`](./skills/tests-to-run/SKILL.md)** runs five tests before anyone says done (unit tests, a type check, lint, one real user flow clicked through like a person, and a test for every fixed bug) and reports each one as pass, fail or not run, with the output.
 
+### "The agent changed main, and I never saw what went in."
+
+The agent went straight from the prompt to the code, with no plan, no branch, no tests and no second look. By the time you saw the change it was already in main, and nobody had said yes to it.
+
+**[`/ship-steps`](./skills/ship-steps/SKILL.md)** takes every change from a prompt to a safe merge in five steps: it agrees the plan, builds in a branch so main stays clean, runs the tests before review, puts the diff in front of you for a second look, and merges only after you say yes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
