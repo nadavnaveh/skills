@@ -206,6 +206,12 @@ The goal, the finish line, what to leave alone, where the work lives and how to 
 
 **[`/brief-parts`](./skills/brief-parts/SKILL.md)** writes the brief once, before the work starts, in five parts: a one-line goal the agent repeats back, what done looks like, what must not change, the key files, and the test that proves it works.
 
+### "I keep telling it to run the tests, and it keeps forgetting."
+
+A rule in CLAUDE.md is a request, and late in a long session the agent can skip it. Anything that must happen every time needs to run without the agent having to remember it.
+
+**[`/hooks-to-add`](./skills/hooks-to-add/SKILL.md)** adds five hooks that run on their own and tests each one: they run the tests after each edit, block risky commands, format every file the agent writes, ping you when it needs you, and log every command it runs.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

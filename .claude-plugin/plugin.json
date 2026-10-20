@@ -43,6 +43,7 @@
     "./skills/fail-closed",
     "./skills/context-rules",
     "./skills/access-levels",
-    "./skills/brief-parts"
+    "./skills/brief-parts",
+    "./skills/hooks-to-add"
   ]
 }
