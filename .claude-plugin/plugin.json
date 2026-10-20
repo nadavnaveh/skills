@@ -31,6 +31,7 @@
     "./skills/build-an-eval",
     "./skills/bug-triage",
     "./skills/corrected-twice",
-    "./skills/code-map"
+    "./skills/code-map",
+    "./skills/phone-rules"
   ]
 }

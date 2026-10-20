@@ -134,6 +134,12 @@ Nobody knew what called that code, where its data went or that it had no tests. 
 
 **[`/code-map`](./skills/code-map/SKILL.md)** maps the code before anyone touches it: where every request starts, where the data goes hop by hop, who calls the function you want to change, which parts are risky and what is tested, then asks for your yes before any edit.
 
+### "I left the agent running, and I couldn't tell from my phone what it was doing or stop it from changing things."
+
+On a small screen you cannot review a diff or watch every step, so the agent either waits on a question you cannot read or changes things you never saw. The rules for what it may do alone have to be set before you leave the desk.
+
+**[`/phone-rules`](./skills/phone-rules/SKILL.md)** sets five rules for the road: reads run without asking, every change waits for your tap, reports come in three lines you can read while walking, a notification arrives when the job ends, and deploy is refused until you are back at your desk.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
