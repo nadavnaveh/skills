@@ -200,6 +200,12 @@ Trust usually grows a step at a time, but the agent was given every permission b
 
 **[`/access-levels`](./skills/access-levels/SKILL.md)** gives the agent access in five levels (read only, sandbox edits, ask first, safe auto-run and production). It starts at the lowest level that does the job, moves up one level only on your word, and leaves every release for a person to sign off.
 
+### "I explained the task five times before the agent got it right."
+
+The goal, the finish line, what to leave alone, where the work lives and how to check it were all in your head, so the agent asked or guessed. Each question costs a round, and each guess costs a fix.
+
+**[`/brief-parts`](./skills/brief-parts/SKILL.md)** writes the brief once, before the work starts, in five parts: a one-line goal the agent repeats back, what done looks like, what must not change, the key files, and the test that proves it works.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

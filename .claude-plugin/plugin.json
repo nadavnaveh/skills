@@ -42,6 +42,7 @@
     "./skills/calls-to-keep",
     "./skills/fail-closed",
     "./skills/context-rules",
-    "./skills/access-levels"
+    "./skills/access-levels",
+    "./skills/brief-parts"
   ]
 }
