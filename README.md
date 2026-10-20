@@ -278,6 +278,12 @@ The first agent knew what was done, what was left and what was never tested, but
 
 **[`/handoff-rules`](./skills/handoff-rules/SKILL.md)** writes one HANDOFF.md when an agent stops (what was done, what is open, what was tested and how, and who holds the task now), and the next agent reads it and checks it against git before it acts.
 
+### "I compacted the session, and it forgot what we decided."
+
+Compaction replaces the whole conversation with a summary, and a summary keeps the gist only. Exact numbers get rounded, early decisions fade, and the rules you set at the start lose their hold.
+
+**[`/compact-safely`](./skills/compact-safely/SKILL.md)** saves your decisions and exact numbers to decisions.md before you compact, runs /compact with a line saying what to keep, then reloads CLAUDE.md, pastes the numbers back and asks what the goal is before the work goes on.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

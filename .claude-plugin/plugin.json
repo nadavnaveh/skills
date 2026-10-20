@@ -55,6 +55,7 @@
     "./skills/stop-signals",
     "./skills/team-roles",
     "./skills/memory-sources",
-    "./skills/handoff-rules"
+    "./skills/handoff-rules",
+    "./skills/compact-safely"
   ]
 }
