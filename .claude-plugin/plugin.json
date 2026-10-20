@@ -62,6 +62,7 @@
     "./skills/agent-wiki",
     "./skills/past-green-tests",
     "./skills/dogfood-first",
-    "./skills/checkpoints"
+    "./skills/checkpoints",
+    "./skills/long-videos"
   ]
 }

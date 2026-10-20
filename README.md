@@ -320,6 +320,12 @@ Nothing was saved along the way, and what was done lived only in the session tha
 
 **[`/checkpoints`](./skills/checkpoints/SKILL.md)** commits a clean point before the job, keeps a progress.md of what is done, what runs now and what is next, commits every step on a branch, resumes at the step that crashed and rolls a bad step back with one git reset after your yes.
 
+### "I gave it an hour of video, and it cost a fortune and still missed the part I needed."
+
+An hour of video holds about 100,000 frames, and the agent tried to look at them instead of reading the words. The one minute that mattered got the same quick look as the other fifty-nine.
+
+**[`/long-videos`](./skills/long-videos/SKILL.md)** turns the video into a timed transcript first, searches it for the minute that matters, looks at one frame every 10 seconds, cuts a two-minute clip for a close look, and puts a timestamp on every claim in the notes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
