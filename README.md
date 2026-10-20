@@ -254,6 +254,12 @@ An MCP server hands the agent its whole list of tools at once, and nobody chose 
 
 **[`/mcp-parts`](./skills/mcp-parts/SKILL.md)** walks the five parts of MCP: it lists every tool a server exposes, shows each call and the answer that came back, sets allow, ask or deny for each tool, and adds one shared server that all your agents use.
 
+### "I let it keep going, and it kept getting worse."
+
+Each step looked like progress, so nobody stopped to ask if the plan still held. The signals were there the whole time: the same error back again, a jump in cost, files nobody named, a plan nobody could restate and no test in half an hour.
+
+**[`/stop-signals`](./skills/stop-signals/SKILL.md)** watches for five signals to stop (same error twice, cost jumps, unasked edits, a plan that drifted, no test in 30 minutes), pauses at the first one with the evidence, and re-plans with you before the work goes on.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

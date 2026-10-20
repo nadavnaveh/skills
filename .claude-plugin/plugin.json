@@ -51,6 +51,7 @@
     "./skills/data-leaks",
     "./skills/automate-questions",
     "./skills/review-habits",
-    "./skills/mcp-parts"
+    "./skills/mcp-parts",
+    "./skills/stop-signals"
   ]
 }
