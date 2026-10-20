@@ -314,6 +314,12 @@ It was only tried on a demo, and a demo is picked because it works. Nobody wrote
 
 **[`/dogfood-first`](./skills/dogfood-first/SKILL.md)** runs it on this week's real tasks, logs one line per miss, fixes the miss that keeps coming back, runs the same tasks again to show fewer misses, and shares it only after three tested weeks.
 
+### "It ran for an hour, crashed halfway, and I had to start over."
+
+Nothing was saved along the way, and what was done lived only in the session that crashed. So nobody knew where to restart or which step broke things.
+
+**[`/checkpoints`](./skills/checkpoints/SKILL.md)** commits a clean point before the job, keeps a progress.md of what is done, what runs now and what is next, commits every step on a branch, resumes at the step that crashed and rolls a bad step back with one git reset after your yes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
