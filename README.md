@@ -260,6 +260,12 @@ Each step looked like progress, so nobody stopped to ask if the plan still held.
 
 **[`/stop-signals`](./skills/stop-signals/SKILL.md)** watches for five signals to stop (same error twice, cost jumps, unasked edits, a plan that drifted, no test in 30 minutes), pauses at the first one with the evidence, and re-plans with you before the work goes on.
 
+### "One agent planned it, built it, tested it and approved it, and nobody caught the mistake."
+
+When one agent plays every role, it checks the work against what it meant to build, not against what it actually built. Nobody else looks, so its mistakes go straight into main.
+
+**[`/team-roles`](./skills/team-roles/SKILL.md)** gives each role one job: the planner breaks the goal into numbered steps, the builder writes one step at a time on a branch, the tester runs the tests and flags what fails, a fresh reviewer reads the diff, and the merge waits for your yes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

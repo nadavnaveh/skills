@@ -52,6 +52,7 @@
     "./skills/automate-questions",
     "./skills/review-habits",
     "./skills/mcp-parts",
-    "./skills/stop-signals"
+    "./skills/stop-signals",
+    "./skills/team-roles"
   ]
 }
