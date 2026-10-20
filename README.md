@@ -242,6 +242,12 @@ The task did not come back often enough to be worth it, nobody could check a run
 
 **[`/automate-questions`](./skills/automate-questions/SKILL.md)** asks five questions before anything is automated (does it repeat, can you check it, what if it fails, who owns it, is the data ready) and builds the job only when every one has an answer.
 
+### "I approved the agent's code after a quick look, and it broke later."
+
+Agent code looks clean and sure of itself, so it gets skimmed instead of read. A big change makes that worse, and the break was waiting at an odd input or in the part no test covered.
+
+**[`/review-habits`](./skills/review-habits/SKILL.md)** reviews agent code with five habits: it keeps the change small, reads every line of the diff, runs it on your machine, tries empty, huge and odd inputs, and lists what no test covers, then reports each one as pass, fail or not run, with the evidence.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
