@@ -46,6 +46,7 @@
     "./skills/brief-parts",
     "./skills/hooks-to-add",
     "./skills/tests-to-run",
-    "./skills/ship-steps"
+    "./skills/ship-steps",
+    "./skills/write-skills"
   ]
 }

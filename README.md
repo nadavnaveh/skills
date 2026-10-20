@@ -224,6 +224,12 @@ The agent went straight from the prompt to the code, with no plan, no branch, no
 
 **[`/ship-steps`](./skills/ship-steps/SKILL.md)** takes every change from a prompt to a safe merge in five steps: it agrees the plan, builds in a branch so main stays clean, runs the tests before review, puts the diff in front of you for a second look, and merges only after you say yes.
 
+### "I explain the same thing to every agent, and each one does it its own way."
+
+How your team tests, ships, names things, reviews and writes tickets lives in your head or an old chat. Every new session starts without it, so each agent guesses, and each one guesses differently.
+
+**[`/write-skills`](./skills/write-skills/SKILL.md)** writes each job down once as its own skill (how we test, how we deploy, our code style, how to review, writing a ticket) from what your team really does, tests it in a fresh session, and commits it so every agent follows the same steps.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
