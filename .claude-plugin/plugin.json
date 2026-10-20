@@ -47,6 +47,7 @@
     "./skills/hooks-to-add",
     "./skills/tests-to-run",
     "./skills/ship-steps",
-    "./skills/write-skills"
+    "./skills/write-skills",
+    "./skills/data-leaks"
   ]
 }

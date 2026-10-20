@@ -230,6 +230,12 @@ How your team tests, ships, names things, reviews and writes tickets lives in yo
 
 **[`/write-skills`](./skills/write-skills/SKILL.md)** writes each job down once as its own skill (how we test, how we deploy, our code style, how to review, writing a ticket) from what your team really does, tests it in a fresh session, and commits it so every agent follows the same steps.
 
+### "My key ended up somewhere I never meant to send it."
+
+Data slips out through everyday steps: a log line, a screenshot, a tool call, a page the agent obeyed, a commit. Each step looks harmless, and whoever got what was printed, shown, sent or pushed keeps it.
+
+**[`/data-leaks`](./skills/data-leaks/SKILL.md)** checks the five places data leaks (logs, screen captures, prompts to tools, pages it reads and commits), closes each one, and reports each as closed, open or not checked.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
