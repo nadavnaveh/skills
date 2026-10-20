@@ -128,6 +128,12 @@ Each correction patches one output, so the cause stays where it was: a rule nobo
 
 **[`/corrected-twice`](./skills/corrected-twice/SKILL.md)** stops at the second correction, writes it as a rule in CLAUDE.md, finds the step in the plan that went wrong, redoes it on one file with a check, and starts a fresh session with the new rule loaded.
 
+### "I changed one small thing in old code, and something far away broke."
+
+Nobody knew what called that code, where its data went or that it had no tests. The agent changed it the way you would change new code, blind.
+
+**[`/code-map`](./skills/code-map/SKILL.md)** maps the code before anyone touches it: where every request starts, where the data goes hop by hop, who calls the function you want to change, which parts are risky and what is tested, then asks for your yes before any edit.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

@@ -30,6 +30,7 @@
     "./skills/answer-checks",
     "./skills/build-an-eval",
     "./skills/bug-triage",
-    "./skills/corrected-twice"
+    "./skills/corrected-twice",
+    "./skills/code-map"
   ]
 }
