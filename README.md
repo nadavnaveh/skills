@@ -152,6 +152,12 @@ Every agent runs the same loop: plan, act, observe, check, then stop or go again
 
 **[`/agent-loop`](./skills/agent-loop/SKILL.md)** runs every task as plan, act, observe, check, and then stop or go another round, makes one change per round, and stops only on a check that passed, or after three rounds it hands back to you.
 
+### "I gave it a thousand pages, and it skimmed the start and guessed the rest."
+
+One agent cannot hold that much at once, so the late pages get less attention and the findings lose their source. A list without page numbers cannot be checked, so you either trust it or read it all again yourself.
+
+**[`/big-archive`](./skills/big-archive/SKILL.md)** splits the archive into numbered parts, reads them in parallel with one subagent per part, makes every finding cite its page, merges the lists so duplicates are gone, and opens two cited pages at random to check the citations hold.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

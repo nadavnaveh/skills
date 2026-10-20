@@ -34,6 +34,7 @@
     "./skills/code-map",
     "./skills/phone-rules",
     "./skills/report-endings",
-    "./skills/agent-loop"
+    "./skills/agent-loop",
+    "./skills/big-archive"
   ]
 }
