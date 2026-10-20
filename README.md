@@ -170,6 +170,12 @@ The agent that did the work checks what it meant to build, not what it built, so
 
 **[`/check-ways`](./skills/check-ways/SKILL.md)** checks the work in five ways before you trust it: it runs the tests, has a second agent review the diff, sets a gate that refuses the commit while tests fail, reads every changed line, and clicks through it the way a user would.
 
+### "The agent went wrong, and I only noticed at the end."
+
+Agents fail in five known ways: they drift off the goal, sound sure when they are wrong, loop on the same fix, forget what you decided and touch what they were not allowed to touch. Each step looks reasonable on its own, so nobody catches the failure until the damage is done.
+
+**[`/agent-failures`](./skills/agent-failures/SKILL.md)** writes down the goal, the allowed files, your decisions and the check before the work starts, then watches for each of the five failures at the step where it begins and reports each one as caught or clear, with the evidence.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

@@ -37,6 +37,7 @@
     "./skills/agent-loop",
     "./skills/big-archive",
     "./skills/prompt-ways",
-    "./skills/check-ways"
+    "./skills/check-ways",
+    "./skills/agent-failures"
   ]
 }
