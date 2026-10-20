@@ -57,6 +57,7 @@
     "./skills/memory-sources",
     "./skills/handoff-rules",
     "./skills/compact-safely",
-    "./skills/tests-as-spec"
+    "./skills/tests-as-spec",
+    "./skills/redact-first"
   ]
 }

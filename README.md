@@ -290,6 +290,12 @@ The agent checked that the new code looked right, not that it does what the old 
 
 **[`/tests-as-spec`](./skills/tests-as-spec/SKILL.md)** freezes the old test suite green, ports one module at a time, runs the same tests against the new code, compares old and new answers on the same input, and stops the agent the moment it edits a test.
 
+### "My demo showed my inbox."
+
+A recording catches everything on the screen, not just the part you meant to show. One frame with an email address, a key, a customer's name, a bank tab or a popup is enough, and once the video is posted, other people keep it.
+
+**[`/redact-first`](./skills/redact-first/SKILL.md)** clears the screen before you record (Do Not Disturb on, extra tabs closed, fake names in place and no keys on screen), then checks the recording frame by frame for emails, keys, names, tabs and notifications, and blurs each one before you post.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
