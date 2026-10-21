@@ -66,6 +66,7 @@
     "./skills/long-videos",
     "./skills/hard-problems",
     "./skills/ai-in-business",
-    "./skills/keys-and-agents"
+    "./skills/keys-and-agents",
+    "./skills/vendor-claims"
   ]
 }

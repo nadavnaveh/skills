@@ -344,6 +344,12 @@ A sandbox limits what the agent can change, not what it can read. A key pasted i
 
 **[`/keys-and-agents`](./skills/keys-and-agents/SKILL.md)** keeps every key out of the chat, has you type it into hidden input that saves it to a private file, shows each session only the keys its task needs, asks for read-only keys, and has you replace a leaked key the same day.
 
+### "I repeated a vendor's number as fact, and it was only their claim."
+
+A number passes from the company to someone quoting it and then to you, and each step drops a word like "single cluster" or "off-peak". The person quoting it adds their own math, so by the end nobody can tell who said what.
+
+**[`/vendor-claims`](./skills/vendor-claims/SKILL.md)** names who made the claim and who passed it on, keeps what was measured and whose price it uses, separates the vendor's numbers from a commentator's estimate, and writes your line with a name and "unverified" next to every number.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
