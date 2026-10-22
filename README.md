@@ -350,6 +350,12 @@ A number passes from the company to someone quoting it and then to you, and each
 
 **[`/vendor-claims`](./skills/vendor-claims/SKILL.md)** names who made the claim and who passed it on, keeps what was measured and whose price it uses, separates the vendor's numbers from a commentator's estimate, and writes your line with a name and "unverified" next to every number.
 
+### "I heard my tools were targets, and I still haven't updated anything."
+
+The updates sit in a browser, a computer, a phone, a few apps and the server your agents run on, so each one waits for later. Nobody checks which ones landed, so a missed update looks the same as a done one.
+
+**[`/update-sweep`](./skills/update-sweep/SKILL.md)** walks one sweep in order (browsers, the computer, phones and desktop apps, the box that runs your agents, then a week without random links), checks what it can see is out of date, asks before it installs or restarts anything, and reports each step as done or not done.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
