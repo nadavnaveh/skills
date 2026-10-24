@@ -68,6 +68,7 @@
     "./skills/ai-in-business",
     "./skills/keys-and-agents",
     "./skills/vendor-claims",
-    "./skills/update-sweep"
+    "./skills/update-sweep",
+    "./skills/server-lockdown"
   ]
 }

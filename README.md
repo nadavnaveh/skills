@@ -356,6 +356,12 @@ The updates sit in a browser, a computer, a phone, a few apps and the server you
 
 **[`/update-sweep`](./skills/update-sweep/SKILL.md)** walks one sweep in order (browsers, the computer, phones and desktop apps, the box that runs your agents, then a week without random links), checks what it can see is out of date, asks before it installs or restarts anything, and reports each step as done or not done.
 
+### "My server is online, and I don't know which doors are open."
+
+A server has two ways in, the site and the server itself, and both face the whole internet. An SSH key does not stop an exploit in the software, and if you close the wrong door first, you lock yourself out.
+
+**[`/server-lockdown`](./skills/server-lockdown/SKILL.md)** follows @levelsio's routine: it maps the open ports on your server, puts the site behind a Cloudflare Tunnel, connects you through Tailscale, locks the firewall only after you are logged in through Tailscale, and then reports each door before and after.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
