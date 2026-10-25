@@ -368,6 +368,12 @@ The agent writes both the code and the tests, so the tests check what it fixed a
 
 **[`/user-path-test`](./skills/user-path-test/SKILL.md)** writes one yes/no test with you before the work starts, for the user the report left out, walking their whole path against the real running app. It breaks the fix on purpose once to prove the test can fail, and holds "done" until the test passes.
 
+### "I asked for one line of work, and it made several decisions for me without asking."
+
+A one-line task leaves gaps, and the agent fills each one with a guess. It tells you about some only after the code, and about some never.
+
+**[`/ask-first`](./skills/ask-first/SKILL.md)** asks until the goal, the why and what done looks like are clear, asks every decision it would guess at once with a suggested answer for each, reports any problem it found on the way, and writes your answers as one definition with a yes/no check before any code.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

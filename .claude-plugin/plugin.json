@@ -70,6 +70,7 @@
     "./skills/vendor-claims",
     "./skills/update-sweep",
     "./skills/server-lockdown",
-    "./skills/user-path-test"
+    "./skills/user-path-test",
+    "./skills/ask-first"
   ]
 }
