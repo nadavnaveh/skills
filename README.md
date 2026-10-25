@@ -362,6 +362,12 @@ A server has two ways in, the site and the server itself, and both face the whol
 
 **[`/server-lockdown`](./skills/server-lockdown/SKILL.md)** follows @levelsio's routine: it maps the open ports on your server, puts the site behind a Cloudflare Tunnel, connects you through Tailscale, locks the firewall only after you are logged in through Tailscale, and then reports each door before and after.
 
+### "The agent's tests were green, and a user still could not get in."
+
+The agent writes both the code and the tests, so the tests check what it fixed and miss the user it never thought about. Nobody reported that user, so the break shows up only when they try to get in.
+
+**[`/user-path-test`](./skills/user-path-test/SKILL.md)** writes one yes/no test with you before the work starts, for the user the report left out, walking their whole path against the real running app. It breaks the fix on purpose once to prove the test can fail, and holds "done" until the test passes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

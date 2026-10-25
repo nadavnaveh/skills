@@ -69,6 +69,7 @@
     "./skills/keys-and-agents",
     "./skills/vendor-claims",
     "./skills/update-sweep",
-    "./skills/server-lockdown"
+    "./skills/server-lockdown",
+    "./skills/user-path-test"
   ]
 }
