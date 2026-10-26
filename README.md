@@ -374,6 +374,12 @@ A one-line task leaves gaps, and the agent fills each one with a guess. It tells
 
 **[`/ask-first`](./skills/ask-first/SKILL.md)** asks until the goal, the why and what done looks like are clear, asks every decision it would guess at once with a suggested answer for each, reports any problem it found on the way, and writes your answers as one definition with a yes/no check before any code.
 
+### "AI designs my pages, and none of them look like me."
+
+The agent has never seen your taste, so it falls back on its own default look. Each correction fixes one page, and the next page starts from the default again.
+
+**[`/taste-skill`](./skills/taste-skill/SKILL.md)** collects your look from two or three pages you like, writes it as short yes/no rules including what is never allowed, saves them as a skill the agent loads whenever it designs, and has the agent check every design against those rules before you see it.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
