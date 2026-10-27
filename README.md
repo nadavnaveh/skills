@@ -410,6 +410,12 @@ The editor emptied the files as the project opened, and only what was committed 
 
 **[`/save-points`](./skills/save-points/SKILL.md)** commits before the agent starts and before you close the laptop, keeps no agent edits waiting for review in Cursor, and runs git status when you open the project, so emptied files come back with one git restore.
 
+### "I wrote the rule in AGENTS.md, and the agent keeps breaking it."
+
+A rule in AGENTS.md is a request, and the agent can skip it. Writing it again only narrows the gap for a while, and it drifts back.
+
+**[`/agent-hooks`](./skills/agent-hooks/SKILL.md)** moves one rule into a git pre-commit hook that checks the staged diff, refuses the commit when the rule is broken, prints the exact fix in words and is tested both ways before you trust it.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

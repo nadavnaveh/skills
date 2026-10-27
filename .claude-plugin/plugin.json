@@ -77,6 +77,7 @@
     "./skills/live-check",
     "./skills/draft-only-mail",
     "./skills/speedup-guard",
-    "./skills/save-points"
+    "./skills/save-points",
+    "./skills/agent-hooks"
   ]
 }

@@ -1,0 +1,7 @@
+#!/bin/sh
+# refuse any staged line that calls print() directly
+if git diff --cached -U0 -- '*.py' | grep -E '^\+([^+].*)?\bprint\(' >/dev/null; then
+  echo "COMMIT REFUSED: this project never calls print() directly."
+  echo "Agent: replace every print(...) with log(...) from diag.py, then commit again."
+  exit 1
+fi
