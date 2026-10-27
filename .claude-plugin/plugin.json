@@ -78,6 +78,7 @@
     "./skills/draft-only-mail",
     "./skills/speedup-guard",
     "./skills/save-points",
-    "./skills/agent-hooks"
+    "./skills/agent-hooks",
+    "./skills/stranger-test"
   ]
 }

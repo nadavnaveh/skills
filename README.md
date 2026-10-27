@@ -416,6 +416,12 @@ A rule in AGENTS.md is a request, and the agent can skip it. Writing it again on
 
 **[`/agent-hooks`](./skills/agent-hooks/SKILL.md)** moves one rule into a git pre-commit hook that checks the staged diff, refuses the commit when the rule is broken, prints the exact fix in words and is tested both ways before you trust it.
 
+### "I built a Supabase app with an agent, and anyone can read my tables."
+
+The public key ships inside the app on purpose, so only Row Level Security and a rule on each table keep a stranger out. When that switch is off, nothing looks wrong until a stranger reads the data.
+
+**[`/stranger-test`](./skills/stranger-test/SKILL.md)** reads every table with the public key and no login, lists each one that sent back rows, and closes it with Row Level Security and one rule per table after your yes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
