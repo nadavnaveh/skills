@@ -76,6 +76,7 @@
     "./skills/safe-delete",
     "./skills/live-check",
     "./skills/draft-only-mail",
-    "./skills/speedup-guard"
+    "./skills/speedup-guard",
+    "./skills/save-points"
   ]
 }

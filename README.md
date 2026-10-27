@@ -404,6 +404,12 @@ A fast rewrite is often correct only inside a range of sizes, types or values. O
 
 **[`/speedup-guard`](./skills/speedup-guard/SKILL.md)** runs the old and new code on the same inputs, edges included, finds where the fast version stops being correct, and adds a guard that sends every input outside those bounds back to the original.
 
+### "I opened my project, and my files were empty."
+
+The editor emptied the files as the project opened, and only what was committed had a copy to come back from. One developer on the Cursor forum was hit this way 25 times in 17 days and lost nothing that was committed.
+
+**[`/save-points`](./skills/save-points/SKILL.md)** commits before the agent starts and before you close the laptop, keeps no agent edits waiting for review in Cursor, and runs git status when you open the project, so emptied files come back with one git restore.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
