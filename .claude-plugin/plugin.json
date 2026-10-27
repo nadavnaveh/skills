@@ -72,6 +72,7 @@
     "./skills/server-lockdown",
     "./skills/user-path-test",
     "./skills/ask-first",
-    "./skills/taste-skill"
+    "./skills/taste-skill",
+    "./skills/safe-delete"
   ]
 }

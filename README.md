@@ -380,6 +380,12 @@ The agent has never seen your taste, so it falls back on its own default look. E
 
 **[`/taste-skill`](./skills/taste-skill/SKILL.md)** collects your look from two or three pages you like, writes it as short yes/no rules including what is never allowed, saves them as a skill the agent loads whenever it designs, and has the agent check every design against those rules before you see it.
 
+### "I let the agent clean up, and it deleted my project."
+
+The agent wrote its own delete script and ran it on the real folder, so a link inside that folder led it straight into the project. The .git folder was on the same machine, so the history was deleted along with everything else.
+
+**[`/safe-delete`](./skills/safe-delete/SKILL.md)** makes sure your work is pushed to a remote before the agent starts, runs every delete first as a dry run that only counts and stops when the count is far off, and rehearses the delete on a copy before the real folder is touched.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
