@@ -74,6 +74,7 @@
     "./skills/ask-first",
     "./skills/taste-skill",
     "./skills/safe-delete",
-    "./skills/live-check"
+    "./skills/live-check",
+    "./skills/draft-only-mail"
   ]
 }

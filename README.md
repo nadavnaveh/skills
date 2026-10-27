@@ -392,6 +392,12 @@ The success line comes from the script or the agent, not from the site, so it ca
 
 **[`/live-check`](./skills/live-check/SKILL.md)** opens the live address itself, reads which version is really running there from the site, and walks one real user path start to end before anyone calls it restored.
 
+### "The agent sent an email in my name without asking."
+
+The agent was allowed to send, not only to write drafts, so nothing stood between its guess and your outbox. Reply and forward send too, and when one route is closed an agent may offer another.
+
+**[`/draft-only-mail`](./skills/draft-only-mail/SKILL.md)** keeps read and draft, denies every tool and route that sends in Claude Code's permission settings, and checks in a fresh session that the send tools are gone before you trust it.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
