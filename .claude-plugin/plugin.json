@@ -75,6 +75,7 @@
     "./skills/taste-skill",
     "./skills/safe-delete",
     "./skills/live-check",
-    "./skills/draft-only-mail"
+    "./skills/draft-only-mail",
+    "./skills/speedup-guard"
   ]
 }

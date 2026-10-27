@@ -398,6 +398,12 @@ The agent was allowed to send, not only to write drafts, so nothing stood betwee
 
 **[`/draft-only-mail`](./skills/draft-only-mail/SKILL.md)** keeps read and draft, denies every tool and route that sends in Claude Code's permission settings, and checks in a fresh session that the send tools are gone before you trust it.
 
+### "The agent made the code much faster, and it gave wrong answers on inputs nobody tried."
+
+A fast rewrite is often correct only inside a range of sizes, types or values. Outside that range it returns a wrong answer with no error, and nobody tried an input out there before approving.
+
+**[`/speedup-guard`](./skills/speedup-guard/SKILL.md)** runs the old and new code on the same inputs, edges included, finds where the fast version stops being correct, and adds a guard that sends every input outside those bounds back to the original.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
