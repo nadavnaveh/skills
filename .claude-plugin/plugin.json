@@ -73,6 +73,7 @@
     "./skills/user-path-test",
     "./skills/ask-first",
     "./skills/taste-skill",
-    "./skills/safe-delete"
+    "./skills/safe-delete",
+    "./skills/live-check"
   ]
 }

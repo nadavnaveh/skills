@@ -386,6 +386,12 @@ The agent wrote its own delete script and ran it on the real folder, so a link i
 
 **[`/safe-delete`](./skills/safe-delete/SKILL.md)** makes sure your work is pushed to a remote before the agent starts, runs every delete first as a dry run that only counts and stops when the count is far off, and rehearses the delete on a copy before the real folder is touched.
 
+### "The agent said production was restored, and users still got errors."
+
+The success line comes from the script or the agent, not from the site, so it can say "restored" while the old build or an error page is still live. Only the live address shows what users get.
+
+**[`/live-check`](./skills/live-check/SKILL.md)** opens the live address itself, reads which version is really running there from the site, and walks one real user path start to end before anyone calls it restored.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
