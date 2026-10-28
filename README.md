@@ -422,6 +422,12 @@ The public key ships inside the app on purpose, so only Row Level Security and a
 
 **[`/stranger-test`](./skills/stranger-test/SKILL.md)** reads every table with the public key and no login, lists each one that sent back rows, and closes it with Row Level Security and one rule per table after your yes.
 
+### "The agent ignores a rule I wrote, as if it never saw it."
+
+Claude Code loads only the start of the memory index, and the cut comes from the end with no error. So the newest rules are the first ones the agent never sees.
+
+**[`/memory-trim`](./skills/memory-trim/SKILL.md)** counts the lines and bytes of MEMORY.md against what loads, lists the rules past the cut, and rebuilds the index as one short line per rule, most important first, with the detail moved into topic files.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

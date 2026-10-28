@@ -79,6 +79,7 @@
     "./skills/speedup-guard",
     "./skills/save-points",
     "./skills/agent-hooks",
-    "./skills/stranger-test"
+    "./skills/stranger-test",
+    "./skills/memory-trim"
   ]
 }
