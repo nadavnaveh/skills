@@ -81,6 +81,7 @@
     "./skills/agent-hooks",
     "./skills/stranger-test",
     "./skills/memory-trim",
-    "./skills/day-gate"
+    "./skills/day-gate",
+    "./skills/inventory-first"
   ]
 }

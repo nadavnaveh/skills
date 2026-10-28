@@ -434,6 +434,12 @@ The agent stopped to ask before each step, so every slot depended on when you ha
 
 **[`/day-gate`](./skills/day-gate/SKILL.md)** puts all of the day's packages (video, cover, caption) in one list, gets one yes from you for the whole day, runs each approved item at its slot without asking and holds anything you did not approve.
 
+### "I sent an agent to do work that was already done."
+
+Nobody looked at what existed before the agents went out, so finished work looked like new work. The request said what to do, and nothing in it said what was already done.
+
+**[`/inventory-first`](./skills/inventory-first/SKILL.md)** lists what already exists (folders, finished outputs and tickets) with dates and counts before any job with several agents, asks you which items are new, and starts agents only for the ones you approved.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
