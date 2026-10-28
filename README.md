@@ -464,6 +464,12 @@ The pipeline runs as one block, so it cannot tell which part your change touched
 
 **[`/step-cache`](./skills/step-cache/SKILL.md)** splits the pipeline into steps, stores each step's output under a key made from its inputs (file bytes, settings, code version), and reuses it when the key matches, so only the steps whose inputs changed run again.
 
+### "The AI voice skipped a line, and nobody noticed until it was posted."
+
+A generated take sounds smooth even when it repeats a sentence or drops one, so a quick listen misses it. The transcriber that checks it has blind spots too, like writing a repeated phrase only once.
+
+**[`/second-ear`](./skills/second-ear/SKILL.md)** turns every take back into text, compares it with the script word by word, regenerates any take with missing, extra or repeated words, and sends the spots the check cannot hear to a person.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
