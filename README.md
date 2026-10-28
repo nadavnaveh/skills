@@ -446,6 +446,12 @@ An approval looks the same after an edit as it did before, so nobody notices tha
 
 **[`/stamp-check`](./skills/stamp-check/SKILL.md)** saves a fingerprint of the files each check judged, compares it with the files right before anything ships, and if even one word changed, the check expires and runs again.
 
+### "The agent fixed the failing check, it's green, and the work got worse."
+
+An agent asked to make a check pass looks for the easiest change that turns it green, and that change can move the number without solving the problem. Nobody reads the change, so the shortcut ships along with the green check.
+
+**[`/fix-review`](./skills/fix-review/SKILL.md)** reads the change behind every check that went green, asks whether it solves the problem or only moves the number, looks at the real output, and adds a check that catches the shortcut, proven to fail on the shortcut and pass on the real fix.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
