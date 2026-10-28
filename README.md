@@ -452,6 +452,12 @@ An agent asked to make a check pass looks for the easiest change that turns it g
 
 **[`/fix-review`](./skills/fix-review/SKILL.md)** reads the change behind every check that went green, asks whether it solves the problem or only moves the number, looks at the real output, and adds a check that catches the shortcut, proven to fail on the shortcut and pass on the real fix.
 
+### "I asked the AI to check the same thing twice, and it gave me opposite answers."
+
+A word like "readable" leaves the line for the judge to draw, and it can draw it differently on every read. The model's own size estimates are guesses too, and in our run some were off by about 10 px.
+
+**[`/rubric-numbers`](./skills/rubric-numbers/SKILL.md)** rewrites every check as a number with a unit and a pass/fail line, makes the judge name the failing element and its value, and measures in code whatever code can measure.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

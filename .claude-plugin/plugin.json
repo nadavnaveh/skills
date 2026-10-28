@@ -84,6 +84,7 @@
     "./skills/day-gate",
     "./skills/inventory-first",
     "./skills/stamp-check",
-    "./skills/fix-review"
+    "./skills/fix-review",
+    "./skills/rubric-numbers"
   ]
 }
