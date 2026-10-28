@@ -458,6 +458,12 @@ A word like "readable" leaves the line for the judge to draw, and it can draw it
 
 **[`/rubric-numbers`](./skills/rubric-numbers/SKILL.md)** rewrites every check as a number with a unit and a pass/fail line, makes the judge name the failing element and its value, and measures in code whatever code can measure.
 
+### "Every small fix re-runs my whole pipeline."
+
+The pipeline runs as one block, so it cannot tell which part your change touched. A one-paragraph fix pays for the whole render again.
+
+**[`/step-cache`](./skills/step-cache/SKILL.md)** splits the pipeline into steps, stores each step's output under a key made from its inputs (file bytes, settings, code version), and reuses it when the key matches, so only the steps whose inputs changed run again.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

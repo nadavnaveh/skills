@@ -85,6 +85,7 @@
     "./skills/inventory-first",
     "./skills/stamp-check",
     "./skills/fix-review",
-    "./skills/rubric-numbers"
+    "./skills/rubric-numbers",
+    "./skills/step-cache"
   ]
 }
