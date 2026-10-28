@@ -80,6 +80,7 @@
     "./skills/save-points",
     "./skills/agent-hooks",
     "./skills/stranger-test",
-    "./skills/memory-trim"
+    "./skills/memory-trim",
+    "./skills/day-gate"
   ]
 }

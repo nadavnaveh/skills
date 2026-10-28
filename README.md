@@ -428,6 +428,12 @@ Claude Code loads only the start of the memory index, and the cut comes from the
 
 **[`/memory-trim`](./skills/memory-trim/SKILL.md)** counts the lines and bytes of MEMORY.md against what loads, lists the rules past the cut, and rebuilds the index as one short line per rule, most important first, with the detail moved into topic files.
 
+### "My agent waited for my approval, and the post missed its slot."
+
+The agent stopped to ask before each step, so every slot depended on when you happened to answer. One late answer can hold a post past more than one slot.
+
+**[`/day-gate`](./skills/day-gate/SKILL.md)** puts all of the day's packages (video, cover, caption) in one list, gets one yes from you for the whole day, runs each approved item at its slot without asking and holds anything you did not approve.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
