@@ -82,6 +82,7 @@
     "./skills/stranger-test",
     "./skills/memory-trim",
     "./skills/day-gate",
-    "./skills/inventory-first"
+    "./skills/inventory-first",
+    "./skills/stamp-check"
   ]
 }

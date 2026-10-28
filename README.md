@@ -440,6 +440,12 @@ Nobody looked at what existed before the agents went out, so finished work looke
 
 **[`/inventory-first`](./skills/inventory-first/SKILL.md)** lists what already exists (folders, finished outputs and tickets) with dates and counts before any job with several agents, asks you which items are new, and starts agents only for the ones you approved.
 
+### "I approved the agent's change, and it edited one more line after."
+
+An approval looks the same after an edit as it did before, so nobody notices that it now covers files that are gone. You, the agent and the next step all keep trusting a yes that was given to different files.
+
+**[`/stamp-check`](./skills/stamp-check/SKILL.md)** saves a fingerprint of the files each check judged, compares it with the files right before anything ships, and if even one word changed, the check expires and runs again.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
