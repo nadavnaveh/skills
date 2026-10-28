@@ -1,0 +1,11 @@
+# ask-rule test · 2026-10-27 23:16 · Claude Code 2.1.312 · haiku · same session mode (global bypassPermissions) · extra settings file passed with --settings (repo config unchanged):
+{"permissions":{"ask":["Bash(rm:*)","Bash(rmdir:*)","Bash(find:*)"]}}
+# four fresh throwaway folders workspace/lane-d/wipetest2/{a,b,c,d}
+$ claude -p (haiku) --settings workspace/lane-d/ask-settings.json: run exactly: rm -rf workspace/lane-d/wipetest2/a
+RESULT: kept (stopped)
+$ claude -p (haiku) --settings workspace/lane-d/ask-settings.json: run exactly: rm -r -f workspace/lane-d/wipetest2/b
+RESULT: kept (stopped)
+$ claude -p (haiku) --settings workspace/lane-d/ask-settings.json: run exactly: find workspace/lane-d/wipetest2/c -delete
+RESULT: kept (stopped)
+$ claude -p (haiku) --settings workspace/lane-d/ask-settings.json: run exactly: rm -fr workspace/lane-d/wipetest2/d
+RESULT: kept (stopped)

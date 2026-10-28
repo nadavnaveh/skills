@@ -87,6 +87,7 @@
     "./skills/fix-review",
     "./skills/rubric-numbers",
     "./skills/step-cache",
-    "./skills/second-ear"
+    "./skills/second-ear",
+    "./skills/agent-guard"
   ]
 }

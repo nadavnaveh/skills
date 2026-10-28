@@ -470,6 +470,12 @@ A generated take sounds smooth even when it repeats a sentence or drops one, so 
 
 **[`/second-ear`](./skills/second-ear/SKILL.md)** turns every take back into text, compares it with the script word by word, regenerates any take with missing, extra or repeated words, and sends the spots the check cannot hear to a person.
 
+### "I asked the agent to tidy a folder, and years of my files were gone."
+
+The agent's terminal commands run with your full permissions, and a delete from the terminal skips the Recycle Bin and the agent's checkpoints. A rule against one way of writing the delete lets the other ways through.
+
+**[`/agent-guard`](./skills/agent-guard/SKILL.md)** makes every delete command ask first, keeps the agent inside the project folder, makes sure what matters is in git and a separate backup, and then tests the delete guard on a throwaway folder.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
