@@ -89,6 +89,7 @@
     "./skills/step-cache",
     "./skills/second-ear",
     "./skills/agent-guard",
-    "./skills/memory-queue"
+    "./skills/memory-queue",
+    "./skills/batch-judge"
   ]
 }

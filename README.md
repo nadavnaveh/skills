@@ -482,6 +482,12 @@ Every agent starts its own builds, tests and renders, and nothing stops them fro
 
 **[`/memory-queue`](./skills/memory-queue/SKILL.md)** sends every heavy job through one small script that caps how many run at once and starts each one only when at least thirty percent of memory is free.
 
+### "My AI checks are slow, and every check reads the same text again."
+
+Each check goes out as its own call, so the model reads the same text and opens the same files once for every check. You wait, and you pay, for the same reading many times.
+
+**[`/batch-judge`](./skills/batch-judge/SKILL.md)** puts every check into one call with one JSON answer and the files pasted in, runs the old and new judge on examples you already know, and switches only after the verdicts match.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
