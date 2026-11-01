@@ -92,6 +92,7 @@
     "./skills/memory-queue",
     "./skills/batch-judge",
     "./skills/stage-clock",
-    "./skills/command-guard"
+    "./skills/command-guard",
+    "./skills/teachability-check"
   ]
 }

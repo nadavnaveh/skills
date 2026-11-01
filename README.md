@@ -500,6 +500,12 @@ A line in the prompt is a request, and the agent decides on every turn whether t
 
 **[`/command-guard`](./skills/command-guard/SKILL.md)** adds a hook that checks every shell command before it runs, blocks the dangerous ones on its list (rm -rf, force push, git reset --hard, DROP TABLE), sends the reason back to the agent, and then tests it on two dangerous and two safe commands.
 
+### "I paid for the voice and the render, and the post had nothing to teach."
+
+Nobody asked what the source gives before the paid work started, so a reaction or a launch note looked like a lesson. By the time anyone noticed, the credits and the hours were already spent.
+
+**[`/teachability-check`](./skills/teachability-check/SKILL.md)** asks one question before any paid or long step (what can someone do next week because of this, and will it still teach next month), writes THIN with the reason when the source has no answer, and stops the task before the money goes out.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
