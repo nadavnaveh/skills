@@ -488,6 +488,12 @@ Each check goes out as its own call, so the model reads the same text and opens 
 
 **[`/batch-judge`](./skills/batch-judge/SKILL.md)** puts every check into one call with one JSON answer and the files pasted in, runs the old and new judge on examples you already know, and switches only after the verdicts match.
 
+### "My agents take hours on one job, and I keep speeding up the wrong step."
+
+Nobody timed the stages, so you guess which one is slow, and the agents get the blame. Most of the time goes to waiting between stages: rules that changed during the run, re-checks of work that was already done, a queue.
+
+**[`/stage-clock`](./skills/stage-clock/SKILL.md)** writes a start and end time for every stage in one file, splits each stage into working and waiting time, sorts the stages by minutes, fixes only the slowest one after your yes and measures the job again.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

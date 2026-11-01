@@ -90,6 +90,7 @@
     "./skills/second-ear",
     "./skills/agent-guard",
     "./skills/memory-queue",
-    "./skills/batch-judge"
+    "./skills/batch-judge",
+    "./skills/stage-clock"
   ]
 }
