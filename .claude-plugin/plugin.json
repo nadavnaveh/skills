@@ -88,6 +88,7 @@
     "./skills/rubric-numbers",
     "./skills/step-cache",
     "./skills/second-ear",
-    "./skills/agent-guard"
+    "./skills/agent-guard",
+    "./skills/memory-queue"
   ]
 }

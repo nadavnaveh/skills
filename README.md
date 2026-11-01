@@ -476,6 +476,12 @@ The agent's terminal commands run with your full permissions, and a delete from 
 
 **[`/agent-guard`](./skills/agent-guard/SKILL.md)** makes every delete command ask first, keeps the agent inside the project folder, makes sure what matters is in git and a separate backup, and then tests the delete guard on a throwaway folder.
 
+### "I run five agents at once, and my Mac runs out of memory, so jobs crash or crawl."
+
+Every agent starts its own builds, tests and renders, and nothing stops them from all running at the same time. A "wait for free memory" rule in the prompt is only a request, and agents forget it.
+
+**[`/memory-queue`](./skills/memory-queue/SKILL.md)** sends every heavy job through one small script that caps how many run at once and starts each one only when at least thirty percent of memory is free.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
