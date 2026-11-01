@@ -91,6 +91,7 @@
     "./skills/agent-guard",
     "./skills/memory-queue",
     "./skills/batch-judge",
-    "./skills/stage-clock"
+    "./skills/stage-clock",
+    "./skills/command-guard"
   ]
 }

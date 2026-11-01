@@ -494,6 +494,12 @@ Nobody timed the stages, so you guess which one is slow, and the agents get the 
 
 **[`/stage-clock`](./skills/stage-clock/SKILL.md)** writes a start and end time for every stage in one file, splits each stage into working and waiting time, sorts the stages by minutes, fixes only the slowest one after your yes and measures the job again.
 
+### "I told the agent to be careful, and that was the only thing stopping it."
+
+A line in the prompt is a request, and the agent decides on every turn whether to follow it. Only a check that runs outside the agent can stop a command before it runs.
+
+**[`/command-guard`](./skills/command-guard/SKILL.md)** adds a hook that checks every shell command before it runs, blocks the dangerous ones on its list (rm -rf, force push, git reset --hard, DROP TABLE), sends the reason back to the agent, and then tests it on two dangerous and two safe commands.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
