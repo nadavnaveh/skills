@@ -96,6 +96,7 @@
     "./skills/teachability-check",
     "./skills/stale-memory",
     "./skills/second-pass",
-    "./skills/one-task-gate"
+    "./skills/one-task-gate",
+    "./skills/disprove-findings"
   ]
 }

@@ -524,6 +524,12 @@ The agent that did the work checks what it meant to make, not what it made. Nobo
 
 **[`/one-task-gate`](./skills/one-task-gate/SKILL.md)** is instructions you paste into any agent, so it writes 5 to 8 yes-or-no questions for one task, waits for your OK, does the task, has a separate checker answer each question with a quoted line, fixes and re-checks at most twice, stops on a remaining no and saves the questions to `checks/<task>.md`.
 
+### "The agent gave me a bug list, and I started fixing before anyone checked it."
+
+A finding reads like a fact, so the fixing starts right away. The agent that found it is the wrong one to ask, because an agent that grades itself approves what it found.
+
+**[`/disprove-findings`](./skills/disprove-findings/SKILL.md)** gives the list to a fresh agent without the first one's history, has it try to prove each finding is not a bug by opening the code, reports each one as not a bug, almost certainly fine or still standing with the evidence, and fixes nothing.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
