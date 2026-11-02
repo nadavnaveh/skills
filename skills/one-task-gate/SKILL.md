@@ -27,4 +27,4 @@ These are instructions you paste into your agent, so it builds you a gate like t
 - Never change a question to get a yes. If a question is wrong, ask the owner.
 - The checker reads and answers. It never fixes.
 - Never tell the checker why you made a choice. Reasons are how you win it over.
-- Our copy gate stopped at least 88 of 115 scripts over 10 days, before any of us read them. That counts stops, not whether every stop was right.
+- In ten days of records we can still recount, our copy gate stopped 56 of 81 pieces at least once. That counts stops, not whether every stop was right.
