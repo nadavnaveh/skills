@@ -27,4 +27,4 @@ These are instructions you paste into your agent, so it flags what in its memory
 - Never pick the winner between two rules yourself, even when one is newer.
 - MISSING proves the line is stale, not that the agent acted on it.
 - Clean means clean for what you checked. Name what you did not check.
-- Our real run found 8 of 44 named files gone, a June rule next to the October rule that replaced it, and 33 index lines cut. That was one memory on one day, not a rate for yours.
+- Our real run found dead file paths and a June rule beside the October rule that replaced it. That was one memory on one day, not a rate for yours.
