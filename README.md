@@ -566,6 +566,12 @@ A hook that fails lets the action through unless it is set to block, and in our 
 
 **[`/lock-on-failure`](./skills/lock-on-failure/SKILL.md)** lists every hook in your settings, adds `onFailure: "block"` to each guard after your yes, leaves hooks that only report open, then makes each guard fail once on purpose in a throwaway project and checks that the action stopped.
 
+### "I keep rejecting the same mistake, and the agent keeps making it."
+
+The reason for each rejection stayed in your head, so the next result never sees it. When the agent writes its own test, it checks what it meant to make, not what you wanted.
+
+**[`/rejections-to-tests`](./skills/rejections-to-tests/SKILL.md)** writes every rejection as one sentence on what was wrong and why, turns it into a yes/no question someone else could answer, proves it fails on the result you rejected, and has the agent run every question on each new result before you look.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

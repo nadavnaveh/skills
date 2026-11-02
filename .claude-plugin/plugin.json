@@ -103,6 +103,7 @@
     "./skills/handoff-note",
     "./skills/failed-reads",
     "./skills/write-the-check",
-    "./skills/lock-on-failure"
+    "./skills/lock-on-failure",
+    "./skills/rejections-to-tests"
   ]
 }
