@@ -536,6 +536,12 @@ A count reads the same whether the rule worked or not, so the number alone canno
 
 **[`/count-check`](./skills/count-check/SKILL.md)** is instructions you paste into any agent, so it ends every count with the exact rule, three random rows it checked and how many rows the rule could not read, and stops before a conclusion when more than 10% went unread.
 
+### "I want my own harness, and all I have is rules in a prompt."
+
+A rule in a prompt is a request, so nothing stops a command you can't undo or holds back a heavy job when memory runs short. A guard nobody tested can also break quietly, and you find out too late.
+
+**[`/harness-starter`](./skills/harness-starter/SKILL.md)** installs the ready kit into `.claude/harness/` (a hook before every command you can't undo, a queue for heavy jobs and tests for that code itself), adds the hook to your settings only after your yes, runs the 7 tests and proves the hook once on a harmless example.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

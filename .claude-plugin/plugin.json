@@ -98,6 +98,7 @@
     "./skills/second-pass",
     "./skills/one-task-gate",
     "./skills/disprove-findings",
-    "./skills/count-check"
+    "./skills/count-check",
+    "./skills/harness-starter"
   ]
 }
