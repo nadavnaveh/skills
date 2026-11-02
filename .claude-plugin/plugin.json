@@ -111,6 +111,7 @@
     "./skills/quote-check",
     "./skills/night-alarm",
     "./skills/ship-check",
-    "./skills/read-filing"
+    "./skills/read-filing",
+    "./skills/agent-limits"
   ]
 }

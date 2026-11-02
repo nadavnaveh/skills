@@ -614,6 +614,12 @@ The headline mixes accounting changes with cash costs in one number, and coverag
 
 **[`/read-filing`](./skills/read-filing/SKILL.md)** reads any filing with three questions (what is in the loss, what operations earn and what the company is committed to pay) and writes a one-page reading where every figure is quoted with its location, every computed figure shows its arithmetic and anything missing says "not in this document".
 
+### "I can't say which steps my agent takes alone, or what would stop it."
+
+The limits sit in someone's head or in a line of the prompt, and the agent decides on every turn whether to follow that line. A delete and a search look alike until one of them can't be undone.
+
+**[`/agent-limits`](./skills/agent-limits/SKILL.md)** maps which steps your agent may take alone: it lists every action from the real config, sorts each by whether it can be undone, gives each a tier and a stop outside the agent, tests a stop in a dry run, writes the halt plan for long jobs and puts it all in one LIMITS.md.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
