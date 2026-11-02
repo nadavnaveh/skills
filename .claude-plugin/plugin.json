@@ -102,6 +102,7 @@
     "./skills/harness-starter",
     "./skills/handoff-note",
     "./skills/failed-reads",
-    "./skills/write-the-check"
+    "./skills/write-the-check",
+    "./skills/lock-on-failure"
   ]
 }

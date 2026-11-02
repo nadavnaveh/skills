@@ -560,6 +560,12 @@ Whoever writes the check decides what gets checked, so an agent grading itself p
 
 **[`/write-the-check`](./skills/write-the-check/SKILL.md)** writes one test with you before the agent starts (one exact command, with examples you chose or approved), holds "done" until it passes, and on every not yet makes the agent quote the real error and fix the cause, which may be the tooling, without ever changing the check.
 
+### "My guard crashed, and the command ran anyway with no error."
+
+A hook that fails lets the action through unless it is set to block, and in our test the agent saw no error. You only learn what a guard does when it fails by making it fail.
+
+**[`/lock-on-failure`](./skills/lock-on-failure/SKILL.md)** lists every hook in your settings, adds `onFailure: "block"` to each guard after your yes, leaves hooks that only report open, then makes each guard fail once on purpose in a throwaway project and checks that the action stopped.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
