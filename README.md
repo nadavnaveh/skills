@@ -584,6 +584,12 @@ Every turn sends the conversation again, so what drains your allowance is the nu
 
 **[`/first-message`](./skills/first-message/SKILL.md)** turns a loose ask into a first message: it checks whether the task needs a new conversation, finds the likely files with one search for you to confirm, and writes the exact change and what counts as done.
 
+### "The agent kept working, and nothing moved."
+
+A new task or another rewrite feels like progress, so nobody stops to ask what actually closed. With no written finish line and no limit, the rounds keep going.
+
+**[`/stop-rule`](./skills/stop-rule/SKILL.md)** is an instruction you paste into any agent, so it writes what done looks like, says what closed after each round, stops itself after two rounds with no progress, and shows you the draft, the failing checks and what changed in each round.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

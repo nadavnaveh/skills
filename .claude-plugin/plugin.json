@@ -106,6 +106,7 @@
     "./skills/lock-on-failure",
     "./skills/rejections-to-tests",
     "./skills/old-code-judge",
-    "./skills/first-message"
+    "./skills/first-message",
+    "./skills/stop-rule"
   ]
 }
