@@ -602,6 +602,12 @@ A report only waits to be read, so the run stays stopped until someone opens it.
 
 **[`/night-alarm`](./skills/night-alarm/SKILL.md)** lists what can stop your night run with each current value and its line, writes a check that runs every thirty minutes and wakes the agent in charge, fixes only what you allowed, sends you one exact command for the rest, and tests it once by tripping a line.
 
+### "I approved the right file, and yesterday's copy was about to go out."
+
+The send reads from a folder of copies, and a copy does not change when the approved file does. So the checks on the package can pass while the folder the send reads is stale.
+
+**[`/ship-check`](./skills/ship-check/SKILL.md)** finds the exact files the send command reads, records a fingerprint of each at approval, compares them at the last stop and shows anything stale, rebuilds the folder from the approved source, compares again, reports match or mismatch per file and stops on any difference, and it sends nothing itself.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

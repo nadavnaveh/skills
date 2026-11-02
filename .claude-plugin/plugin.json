@@ -109,6 +109,7 @@
     "./skills/first-message",
     "./skills/stop-rule",
     "./skills/quote-check",
-    "./skills/night-alarm"
+    "./skills/night-alarm",
+    "./skills/ship-check"
   ]
 }
