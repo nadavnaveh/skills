@@ -108,6 +108,7 @@
     "./skills/old-code-judge",
     "./skills/first-message",
     "./skills/stop-rule",
-    "./skills/quote-check"
+    "./skills/quote-check",
+    "./skills/night-alarm"
   ]
 }

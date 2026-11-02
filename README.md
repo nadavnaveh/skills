@@ -596,6 +596,12 @@ A quote can get reworded on its way into a draft, and the marks stay on. The age
 
 **[`/quote-check`](./skills/quote-check/SKILL.md)** has the writing agent paste each quote's source sentence and link, has a different agent open the link and search those exact words, reports each quote as exact, reworded or unverified with the line found, and changes nothing without your yes.
 
+### "The run stopped at night, and the report waited until morning."
+
+A report only waits to be read, so the run stays stopped until someone opens it. Nobody wrote down what could stop the run, and nothing wakes anyone when it does.
+
+**[`/night-alarm`](./skills/night-alarm/SKILL.md)** lists what can stop your night run with each current value and its line, writes a check that runs every thirty minutes and wakes the agent in charge, fixes only what you allowed, sends you one exact command for the rest, and tests it once by tripping a line.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
