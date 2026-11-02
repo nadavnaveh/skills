@@ -95,6 +95,7 @@
     "./skills/command-guard",
     "./skills/teachability-check",
     "./skills/stale-memory",
-    "./skills/second-pass"
+    "./skills/second-pass",
+    "./skills/one-task-gate"
   ]
 }

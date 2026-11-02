@@ -518,6 +518,12 @@ The agent wrote what the request said and stopped, so nobody tried the empty inp
 
 **[`/second-pass`](./skills/second-pass/SKILL.md)** adds the second pass to every coding task: it lists the odd cases the request implies, writes and runs a check for each along with the project's tests, fixes the code for up to three rounds without ever editing a test, and reports what was checked, what passed and what was not checked.
 
+### "My agent checks its own work, and it always says it's good."
+
+The agent that did the work checks what it meant to make, not what it made. Nobody wrote down what good means, so its yes costs it nothing.
+
+**[`/one-task-gate`](./skills/one-task-gate/SKILL.md)** is instructions you paste into any agent, so it writes 5 to 8 yes-or-no questions for one task, waits for your OK, does the task, has a separate checker answer each question with a quoted line, fixes and re-checks at most twice, stops on a remaining no and saves the questions to `checks/<task>.md`.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
