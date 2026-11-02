@@ -554,6 +554,12 @@ A blocked source and a quiet day look the same in a summary. The agent writes ab
 
 **[`/failed-reads`](./skills/failed-reads/SKILL.md)** opens every report with its sources marked read or failed with the real error, keeps the failed ones in a file so they go first in the next run, ends with one line naming what it could not read, and calls it an outage when nothing was read.
 
+### "The agent said done, and it only tested itself on examples it picked."
+
+Whoever writes the check decides what gets checked, so an agent grading itself picks examples it already expects to pass. Its done can be right, but only by luck, and nobody can tell.
+
+**[`/write-the-check`](./skills/write-the-check/SKILL.md)** writes one test with you before the agent starts (one exact command, with examples you chose or approved), holds "done" until it passes, and on every not yet makes the agent quote the real error and fix the cause, which may be the tooling, without ever changing the check.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

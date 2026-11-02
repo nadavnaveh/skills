@@ -101,6 +101,7 @@
     "./skills/count-check",
     "./skills/harness-starter",
     "./skills/handoff-note",
-    "./skills/failed-reads"
+    "./skills/failed-reads",
+    "./skills/write-the-check"
   ]
 }
