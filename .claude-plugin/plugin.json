@@ -94,6 +94,7 @@
     "./skills/stage-clock",
     "./skills/command-guard",
     "./skills/teachability-check",
-    "./skills/stale-memory"
+    "./skills/stale-memory",
+    "./skills/second-pass"
   ]
 }

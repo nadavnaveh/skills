@@ -512,6 +512,12 @@ Memory is a copy of your project, and nothing syncs it when the project moves. S
 
 **[`/stale-memory`](./skills/stale-memory/SKILL.md)** is instructions you paste into any agent, so it goes through your rules, memory and index and gives you one list of MISSING, CONFLICT and UNDATED lines, each with where it lives, and you decide what goes.
 
+### "The code worked on the normal case, and broke on the first odd one."
+
+The agent wrote what the request said and stopped, so nobody tried the empty input, the edge of a range or the comma inside quotes. Those cases were implied by the request, and nothing made anyone check them.
+
+**[`/second-pass`](./skills/second-pass/SKILL.md)** adds the second pass to every coding task: it lists the odd cases the request implies, writes and runs a check for each along with the project's tests, fixes the code for up to three rounds without ever editing a test, and reports what was checked, what passed and what was not checked.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
