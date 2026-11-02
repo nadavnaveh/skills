@@ -7,7 +7,7 @@ description: Lists what can stop a night run (free disk, credits or quota, permi
 
 The run stopped at night. A report said so, and nobody read it until morning. This skill sets up an alarm before your next night run.
 
-In our run, a report waited 7 hours. The next day the alarm rang under 12 GB, cleared what it could and handed over one command, and 2 hours later we were back. That is one real catch so far, not a rate.
+In our run, reports sat unread, and no big job started for almost 7 hours. That same day the alarm rang under 12 GB, cleared what it could and handed over one command, and 2 hours later we were back. That night it rang again, the same way. Two rings on one day, not a rate.
 
 ## The principles
 1. A report only waits to be read. An alarm wakes someone.
