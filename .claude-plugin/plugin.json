@@ -93,6 +93,7 @@
     "./skills/batch-judge",
     "./skills/stage-clock",
     "./skills/command-guard",
-    "./skills/teachability-check"
+    "./skills/teachability-check",
+    "./skills/stale-memory"
   ]
 }

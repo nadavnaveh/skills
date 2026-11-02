@@ -506,6 +506,12 @@ Nobody asked what the source gives before the paid work started, so a reaction o
 
 **[`/teachability-check`](./skills/teachability-check/SKILL.md)** asks one question before any paid or long step (what can someone do next week because of this, and will it still teach next month), writes THIN with the reason when the source has no answer, and stops the task before the money goes out.
 
+### "My agent's memory points to files that are gone and rules I already replaced."
+
+Memory is a copy of your project, and nothing syncs it when the project moves. So deleted files and replaced rules stay in place with no warning on the line itself.
+
+**[`/stale-memory`](./skills/stale-memory/SKILL.md)** is instructions you paste into any agent, so it goes through your rules, memory and index and gives you one list of MISSING, CONFLICT and UNDATED lines, each with where it lives, and you decide what goes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
