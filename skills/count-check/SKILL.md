@@ -5,7 +5,7 @@ description: Makes your agent end every count with its rule, three random rows a
 
 # Count check
 
-Our agent said 114 of 145 video ideas had no video yet. 74 of those were already in work, and 37 were finished. A count reads the same whether the rule worked or not. These are instructions you paste into your agent, so it adds these three questions to every count.
+Our agent said 114 of 145 video ideas had no video yet. 74 of those were already in work, and at least 18 were finished that day. A count reads the same whether the rule worked or not. These are instructions you paste into your agent, so it adds these three questions to every count.
 
 ## The instructions
 
