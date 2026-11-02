@@ -99,6 +99,7 @@
     "./skills/one-task-gate",
     "./skills/disprove-findings",
     "./skills/count-check",
-    "./skills/harness-starter"
+    "./skills/harness-starter",
+    "./skills/handoff-note"
   ]
 }

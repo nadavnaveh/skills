@@ -542,6 +542,12 @@ A rule in a prompt is a request, so nothing stops a command you can't undo or ho
 
 **[`/harness-starter`](./skills/harness-starter/SKILL.md)** installs the ready kit into `.claude/harness/` (a hook before every command you can't undo, a queue for heavy jobs and tests for that code itself), adds the hook to your settings only after your yes, runs the 7 tests and proves the hook once on a harmless example.
 
+### "The session ended, and everything it understood was gone."
+
+What the session understood lived in the conversation, so it ended with the conversation. A note that nobody tested can read well and still leave the next agent guessing.
+
+**[`/handoff-note`](./skills/handoff-note/SKILL.md)** writes one note before you close (where the code stands, what was decided and why, what is half done and what is dangerous to touch), checks each claim against the repo, marks the rest as guesses, and fixes the note until a fresh agent with only the note gets all four right.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
