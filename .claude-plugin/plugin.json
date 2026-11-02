@@ -100,6 +100,7 @@
     "./skills/disprove-findings",
     "./skills/count-check",
     "./skills/harness-starter",
-    "./skills/handoff-note"
+    "./skills/handoff-note",
+    "./skills/failed-reads"
   ]
 }

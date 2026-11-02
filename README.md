@@ -548,6 +548,12 @@ What the session understood lived in the conversation, so it ended with the conv
 
 **[`/handoff-note`](./skills/handoff-note/SKILL.md)** writes one note before you close (where the code stands, what was decided and why, what is half done and what is dangerous to touch), checks each claim against the repo, marks the rest as guesses, and fixes the note until a fresh agent with only the note gets all four right.
 
+### "My agent said nothing new, and it just couldn't read the source."
+
+A blocked source and a quiet day look the same in a summary. The agent writes about what it got, and nothing makes it say what it did not get.
+
+**[`/failed-reads`](./skills/failed-reads/SKILL.md)** opens every report with its sources marked read or failed with the real error, keeps the failed ones in a file so they go first in the next run, ends with one line naming what it could not read, and calls it an outage when nothing was read.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
