@@ -530,6 +530,12 @@ A finding reads like a fact, so the fixing starts right away. The agent that fou
 
 **[`/disprove-findings`](./skills/disprove-findings/SKILL.md)** gives the list to a fresh agent without the first one's history, has it try to prove each finding is not a bug by opening the code, reports each one as not a bug, almost certainly fine or still standing with the evidence, and fixes nothing.
 
+### "The count was wrong, and it looked right."
+
+A count reads the same whether the rule worked or not, so the number alone cannot show a wrong rule. Rows the rule could not read land in a group like "new", and the total still looks clean.
+
+**[`/count-check`](./skills/count-check/SKILL.md)** is instructions you paste into any agent, so it ends every count with the exact rule, three random rows it checked and how many rows the rule could not read, and stops before a conclusion when more than 10% went unread.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

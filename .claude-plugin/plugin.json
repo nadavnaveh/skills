@@ -97,6 +97,7 @@
     "./skills/stale-memory",
     "./skills/second-pass",
     "./skills/one-task-gate",
-    "./skills/disprove-findings"
+    "./skills/disprove-findings",
+    "./skills/count-check"
   ]
 }
