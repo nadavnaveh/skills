@@ -590,6 +590,12 @@ A new task or another rewrite feels like progress, so nobody stops to ask what a
 
 **[`/stop-rule`](./skills/stop-rule/SKILL.md)** is an instruction you paste into any agent, so it writes what done looks like, says what closed after each round, stops itself after two rounds with no progress, and shows you the draft, the failing checks and what changed in each round.
 
+### "The agent put it in quote marks, and the source never said those words."
+
+A quote can get reworded on its way into a draft, and the marks stay on. The agent that wrote it always thinks it copied right, so asking it again only gets a yes.
+
+**[`/quote-check`](./skills/quote-check/SKILL.md)** has the writing agent paste each quote's source sentence and link, has a different agent open the link and search those exact words, reports each quote as exact, reworded or unverified with the line found, and changes nothing without your yes.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

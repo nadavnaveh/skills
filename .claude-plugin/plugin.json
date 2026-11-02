@@ -107,6 +107,7 @@
     "./skills/rejections-to-tests",
     "./skills/old-code-judge",
     "./skills/first-message",
-    "./skills/stop-rule"
+    "./skills/stop-rule",
+    "./skills/quote-check"
   ]
 }
