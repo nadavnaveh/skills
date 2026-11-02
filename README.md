@@ -578,6 +578,12 @@ A rewrite gets checked by reading it or by tests written for it, and both only c
 
 **[`/old-code-judge`](./skills/old-code-judge/SKILL.md)** is the instructions you paste into any agent before it rewrites or ports code, so it saves the old code's exact output on real inputs, compares the new code against it byte for byte, fixes the new code on every difference and reports a count that must be 0.
 
+### "My allowance runs out long before my work does."
+
+Every turn sends the conversation again, so what drains your allowance is the number of turns, not the length of your prompt. A loose ask makes the agent search for the files, and an old conversation gets sent again with every turn.
+
+**[`/first-message`](./skills/first-message/SKILL.md)** turns a loose ask into a first message: it checks whether the task needs a new conversation, finds the likely files with one search for you to confirm, and writes the exact change and what counts as done.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
