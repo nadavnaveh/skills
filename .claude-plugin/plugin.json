@@ -110,6 +110,7 @@
     "./skills/stop-rule",
     "./skills/quote-check",
     "./skills/night-alarm",
-    "./skills/ship-check"
+    "./skills/ship-check",
+    "./skills/read-filing"
   ]
 }

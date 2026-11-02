@@ -608,6 +608,12 @@ The send reads from a folder of copies, and a copy does not change when the appr
 
 **[`/ship-check`](./skills/ship-check/SKILL.md)** finds the exact files the send command reads, records a fingerprint of each at approval, compares them at the last stop and shows anything stale, rebuilds the folder from the approved source, compares again, reports match or mismatch per file and stops on any difference, and it sends nothing itself.
 
+### "A company I depend on posted a scary loss, and I can't tell what it means."
+
+The headline mixes accounting changes with cash costs in one number, and coverage repeats it without the lines behind it. What the company has promised to pay sits deeper in the document, where few people read.
+
+**[`/read-filing`](./skills/read-filing/SKILL.md)** reads any filing with three questions (what is in the loss, what operations earn and what the company is committed to pay) and writes a one-page reading where every figure is quoted with its location, every computed figure shows its arithmetic and anything missing says "not in this document".
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
