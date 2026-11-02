@@ -112,6 +112,7 @@
     "./skills/night-alarm",
     "./skills/ship-check",
     "./skills/read-filing",
-    "./skills/agent-limits"
+    "./skills/agent-limits",
+    "./skills/faster-same"
   ]
 }

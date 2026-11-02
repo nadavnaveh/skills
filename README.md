@@ -620,6 +620,12 @@ The limits sit in someone's head or in a line of the prompt, and the agent decid
 
 **[`/agent-limits`](./skills/agent-limits/SKILL.md)** maps which steps your agent may take alone: it lists every action from the real config, sorts each by whether it can be undone, gives each a tier and a stop outside the agent, tests a stop in a dry run, writes the halt plan for long jobs and puts it all in one LIMITS.md.
 
+### "The agent offered to make my code faster, and I won't read every line."
+
+A rewrite can look right and still behave differently, and a quick read won't show it. If the original is gone, there is also no way back.
+
+**[`/faster-same`](./skills/faster-same/SKILL.md)** is the text you paste into your agent, so it keeps the original, compares old and new on at least 1,000 inputs, times both, adds a switch back and ends with four lines you check yourself.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
