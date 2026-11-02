@@ -1,28 +1,28 @@
 ---
 name: batch-judge
-description: Turns an AI judge that runs many checks on the same text, one call per check, into one call that answers every check in one JSON answer, with the files pasted in, and proves the verdicts did not change on examples you already know before you switch. Fixes "my AI checks are slow, and every check reads the same text again." Use when an LLM judge, grader, reviewer or eval asks several questions about the same input, when the checks feel slow or cost too much, and when you add a new check to a judge you already have. Also on /batch-judge.
+description: Speeds up an AI judge that reads the same text many times. It keeps every check in one prompt with one JSON answer, pastes the files in, and cuts the repeat reads only after old and new give the same verdicts on examples you already know. Fixes "my AI judge is slow, and it keeps reading the same text and files again." Use when an LLM judge, grader, reviewer or eval makes several calls on the same input, opens the same files on each call, feels slow, or is about to get more checks. Also on /batch-judge.
 ---
 
 # Batch judge
 
-Your AI judge runs ten checks on the same text, one call each. Every call reads the same text again and reads the same files again, so you wait and pay for the same reading many times. On a judge that runs on every piece of work, that waiting and that cost add up every day. This skill puts the checks into one call, and it proves the verdicts stayed the same before you switch.
+Your AI judge makes many calls on the same text. Each call reads that text again and opens the same files again, so you wait and pay for the same reading many times. This skill gets the judge down to one read with the files pasted in, and it switches only after proof that the verdicts did not change.
 
 ## The principles
-1. One input, one read. Questions about the same text go in the same call.
+1. One input, one prompt. Every question goes in it, with one JSON answer.
 2. Paste, don't point. Each file the judge opens on its own is another round of waiting.
-3. Faster means nothing until the verdicts match on examples you already know.
+3. One read is not always enough. The comparison decides that, not the speed.
 
 ## Steps
-1. List every check the judge runs on one input, with its exact wording. Keep the old judge as it is, under its own name, so you can still run it.
+1. Look at what the judge does today: how many calls per input, what each call asks, and which files it opens. Do not assume. Keep the old judge runnable, under its own name.
 2. Write one prompt: the input once, then every check, word for word as before. End it with "Return ONLY one JSON object" and one key per check, for example `{"H1": {"v": "yes|no", "quote": "..."}, "H2": ...}`.
-3. Paste every file the checks need into the prompt, between clear markers, and tell the judge not to open any file. If your runner lets you remove the file tools from the call, remove them. If it does not, run one input and count the requests: more than one means the judge is still opening files, so find what it opened and paste that in too.
-4. Read the JSON in code, not by eye. A missing key, or a value that is not yes or no, is a failed read: retry it once, and never fill it in with a guess.
-5. Pick a few inputs you already know, some good and some bad, and write down the right verdict for each before any run. Run the old judge and the new one on them. Report, for each input, the old verdict, the new verdict, the seconds and the number of calls. Then say how many verdicts matched out of the total.
-6. If any verdict differs, stop and show the checks that differ, with both answers. The owner decides. If all match, show the table and ask "Switch to one call?" Switch only after a yes.
-7. After any change to the prompt, the checks or the model, run the same known inputs again and compare before you trust the new verdicts.
+3. Paste every file the checks need into the prompt, between clear markers, and tell the judge not to open any file.
+4. Build a known set: good and bad examples, with the right verdict for each written down before any run.
+5. Run the old judge and the new one on every example, three times each. For each input, report the known verdict, the old verdict, the new verdict, the seconds and the calls. Take the majority of three as each judge's verdict. Then give the matches both ways, for example "6 of 6 by majority of three runs, 17 of 18 by single run".
+6. If every majority verdict matches, show the table and ask "Cut the repeats?" Switch only after a yes. If any verdict differs, stop and show the checks that differ, with both answers. The owner decides, and may keep more than one read.
 
 ## Rules
 - Never switch on "it looks the same". Only the comparison counts.
-- Keep the check wording identical. A reworded check is a new check and needs its own comparison.
-- A failed read is a failure, never a pass.
 - Faster with different verdicts is not an improvement. Say so and stop.
+- A broken JSON answer is a failed read, never a pass. After any change to the prompt, the checks or the model, run the comparison again.
+- Keep the old judge runnable after the switch.
+- Our run: six known scripts went from 394 seconds, at 5 to 15 reads a script, to between 100 and 123 seconds at one read. Verdicts matched on all six by majority of three runs, and a single run matched 17 of 18. Your judge needs its own comparison.
