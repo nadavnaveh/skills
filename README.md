@@ -572,6 +572,12 @@ The reason for each rejection stayed in your head, so the next result never sees
 
 **[`/rejections-to-tests`](./skills/rejections-to-tests/SKILL.md)** writes every rejection as one sentence on what was wrong and why, turns it into a yes/no question someone else could answer, proves it fails on the result you rejected, and has the agent run every question on each new result before you look.
 
+### "The agent rewrote my code, and I can't prove it still does the same thing."
+
+A rewrite gets checked by reading it or by tests written for it, and both only check what the agent thinks the old code did. The old code is the one record of what really happens, and it is about to be replaced.
+
+**[`/old-code-judge`](./skills/old-code-judge/SKILL.md)** is the instructions you paste into any agent before it rewrites or ports code, so it saves the old code's exact output on real inputs, compares the new code against it byte for byte, fixes the new code on every difference and reports a count that must be 0.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

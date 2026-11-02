@@ -104,6 +104,7 @@
     "./skills/failed-reads",
     "./skills/write-the-check",
     "./skills/lock-on-failure",
-    "./skills/rejections-to-tests"
+    "./skills/rejections-to-tests",
+    "./skills/old-code-judge"
   ]
 }
