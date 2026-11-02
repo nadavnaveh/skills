@@ -580,7 +580,7 @@ A rewrite gets checked by reading it or by tests written for it, and both only c
 
 ### "My allowance runs out long before my work does."
 
-Every turn sends the conversation again, so what drains your allowance is the number of turns, not the length of your prompt. A loose ask makes the agent search for the files, and an old conversation gets sent again with every turn.
+In Claude Code, every model request sends the conversation again, so the back-and-forth costs more than the length of your prompt. A loose ask makes the agent search for the files, and an old conversation gets sent again with every request.
 
 **[`/first-message`](./skills/first-message/SKILL.md)** turns a loose ask into a first message: it checks whether the task needs a new conversation, finds the likely files with one search for you to confirm, and writes the exact change and what counts as done.
 
