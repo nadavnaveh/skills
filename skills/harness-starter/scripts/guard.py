@@ -2,7 +2,7 @@
 # PreToolUse hook: blocks commands you can't undo before they run. Exit 2 = blocked, the reason goes back to the agent.
 # It fails closed: input it can't read blocks, because a guard that breaks quietly is worse than no guard. A short list: add your own.
 import json, re, sys
-BAD = [r"\brm\s+-[a-zA-Z]*[rf]", r"git\s+push\b.*(--force|\s-f\b)", r"git\s+reset\s+--hard", r"\bdrop\s+(table|database)\b"]
+BAD = [r"\brm\s+-[a-zA-Z]*[rf]", r"\bgit\b[^;&|\n]*\spush\b[^;&|\n]*\s(--force\b|-[a-zA-Z]*f[a-zA-Z]*\b|\+\S)", r"git\s+reset\s+--hard", r"\bdrop\s+(table|database)\b"]
 try:
     cmd = json.loads(sys.stdin.read())["tool_input"]["command"]
     if not isinstance(cmd, str): raise TypeError("command is not text")

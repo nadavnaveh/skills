@@ -16,12 +16,13 @@ def cmd(c):
 class Guard(unittest.TestCase):
     def test_blocks_what_you_cannot_undo(self):
         for c in ("rm -rf build", "rm -f notes.txt", "git push origin main --force", "git push -f origin main",
+                  "git push -fu origin main", "git push origin +main", "git -C repo push -f origin main", "git push --force-with-lease",
                   "git reset --hard HEAD~1", "psql -c 'DROP TABLE users'"):
             r = cmd(c)
             self.assertEqual(r.returncode, 2, c); self.assertIn("Ask the owner first", r.stderr)
 
     def test_lets_normal_work_through(self):
-        for c in ("ls -la", "git status", "git push origin main", "grep -rf patterns.txt src"):
+        for c in ("ls -la", "git status", "git push origin main", "git push origin feature-f", "git push -u origin main", "git push --follow-tags", "grep -rf patterns.txt src"):
             self.assertEqual(cmd(c).returncode, 0, c)
 
     def test_broken_input_blocks_instead_of_passing(self):   # a crash that passes is a guard that fails open

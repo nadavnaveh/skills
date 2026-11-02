@@ -24,7 +24,7 @@ You want your own harness, and all you have is rules in a prompt. A rule is a re
 7. Report each piece as installed, passed or not done. If the hook does not fire, start a new session.
 
 ## Rules
-- The hook's patterns are a short list and can be got around, for example by a script that deletes files. Add your own. It watches the Bash tool only.
+- The hook's patterns are a short list and can be got around. It does not catch `rm --recursive`, `rm -i -r`, `rm dir -rf`, `find -delete`, `git clean`, `git branch -D`, `git checkout -- .`, `git stash drop`, `truncate`, `dd`, `mv` and scripts that delete. Add your own. It watches the Bash tool only.
 - `settings.hook.json` sets `onFailure` to `block` (Claude Code 2.1.295 or newer), so a hook that crashes blocks. `guard.py` also blocks on input it can't read.
 - The queue reads free memory on macOS and Linux and refuses if it can't. It only holds jobs sent through it.
 - This kit does not replace permissions or backups.
