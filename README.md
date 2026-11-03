@@ -644,6 +644,12 @@ An agent checking its own decision agrees with itself, so asking it again only g
 
 **[`/objector`](./skills/objector/SKILL.md)** has the agent write the decision and its reasons, gives them to a fresh subagent that argues the decision is wrong point by point, has the first agent answer every point and change only for a fact it checked, and shows you the decision, the objections, the answers and what changed.
 
+### "I run my skill by hand and read a long answer every time."
+
+A long answer can only be judged by eye, so the skill runs only while you sit and watch it. Nothing checks it on its own, so nothing stops when it goes wrong.
+
+**[`/skill-button`](./skills/skill-button/SKILL.md)** runs a skill from our script, with the check: one input in and one line back, then a word check marks each input PASS or FAIL and exits 1 if any fails, so a schedule or CI can stop.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
