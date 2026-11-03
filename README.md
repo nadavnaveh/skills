@@ -626,6 +626,12 @@ A rewrite can look right and still behave differently, and a quick read won't sh
 
 **[`/faster-same`](./skills/faster-same/SKILL.md)** is the text you paste into your agent, so it keeps the original, compares old and new on at least 1,000 inputs, times both, adds a switch back and ends with four lines you check yourself.
 
+### "The AI read a line in the document that I couldn't see."
+
+The agent gets a document's text, not its page, so a line in white or tiny type reads to it like any other line. A supplier can hide an order there, and you would never see it on screen.
+
+**[`/hidden-text-check`](./skills/hidden-text-check/SKILL.md)** reads a plain text copy of the document before the agent does, has a fresh subagent list every instruction inside without doing any, and runs a finder for white, tiny or hidden text in Word files, saying plainly what it cannot check.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

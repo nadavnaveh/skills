@@ -113,6 +113,7 @@
     "./skills/ship-check",
     "./skills/read-filing",
     "./skills/agent-limits",
-    "./skills/faster-same"
+    "./skills/faster-same",
+    "./skills/hidden-text-check"
   ]
 }
