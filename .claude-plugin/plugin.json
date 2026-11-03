@@ -115,6 +115,7 @@
     "./skills/agent-limits",
     "./skills/faster-same",
     "./skills/hidden-text-check",
-    "./skills/stack-compare"
+    "./skills/stack-compare",
+    "./skills/objector"
   ]
 }

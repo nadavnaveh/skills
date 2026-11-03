@@ -638,6 +638,12 @@ The same task can take an agent twice the tokens and rounds in one stack as in a
 
 **[`/stack-compare`](./skills/stack-compare/SKILL.md)** runs one small task from your project three times on each of two options in throwaway copies, records the tokens, turns and cost of every run, builds or tests each result, and prints the median and spread per option with how many runs worked.
 
+### "The agent made a call that cost money, and nobody argued with it."
+
+An agent checking its own decision agrees with itself, so asking it again only gets a yes. A second voice helps only when it is a different agent and every objection points to a fact someone can check.
+
+**[`/objector`](./skills/objector/SKILL.md)** has the agent write the decision and its reasons, gives them to a fresh subagent that argues the decision is wrong point by point, has the first agent answer every point and change only for a fact it checked, and shows you the decision, the objections, the answers and what changed.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
