@@ -100,7 +100,7 @@ The agent filled every gap in that line with a guess: who reads it, what shape i
 
 ### "My session filled up with files and logs, and the agent lost the thread."
 
-Everything the agent reads stays in its window and is sent again on every turn. Search results, long logs and test output crowd out the task itself.
+Everything the agent reads stays in its window and is sent again with every model request. Search results, long logs and test output crowd out the task itself.
 
 **[`/subagent-jobs`](./skills/subagent-jobs/SKILL.md)** sends five reading jobs (search code, read long logs, run the tests, review with fresh eyes, research) to a subagent with its own clean window, and takes back only a short summary that points to its sources.
 

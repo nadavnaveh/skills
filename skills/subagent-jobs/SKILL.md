@@ -5,7 +5,7 @@ description: Sends the reading-heavy parts of a task (searching code, reading lo
 
 # Subagent jobs
 
-The main session filled up with files, logs and test output, and the agent lost the thread. Everything it reads stays in its window and is sent again on every turn. This skill hands the heavy reading to a subagent, which works in its own clean window and sends back only a summary.
+The main session filled up with files, logs and test output, and the agent lost the thread. Everything it reads stays in its window and is sent again with every model request. This skill hands the heavy reading to a subagent, which works in its own clean window and sends back only a summary.
 
 ## The principles
 1. A subagent has its own window. What it reads stays there. Only its answer comes back.
