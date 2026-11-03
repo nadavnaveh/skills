@@ -650,6 +650,12 @@ A long answer can only be judged by eye, so the skill runs only while you sit an
 
 **[`/skill-button`](./skills/skill-button/SKILL.md)** runs a skill from our script, with the check: one input in and one line back, then a word check marks each input PASS or FAIL and exits 1 if any fails, so a schedule or CI can stop.
 
+### "I wrote rules in CLAUDE.md, and I can't tell which ones it follows."
+
+The agent would follow some lines without being told and skips others, and one session cannot tell the two apart. A rule about order or care often leaves nothing in the answer to check.
+
+**[`/rule-count`](./skills/rule-count/SKILL.md)** runs one small real task three times with your CLAUDE.md and three times without it in a throwaway copy, counts from the logs how often each line was kept, and suggests a visible rewrite for every line that changed nothing.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from

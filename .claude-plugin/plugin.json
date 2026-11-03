@@ -117,6 +117,7 @@
     "./skills/hidden-text-check",
     "./skills/stack-compare",
     "./skills/objector",
-    "./skills/skill-button"
+    "./skills/skill-button",
+    "./skills/rule-count"
   ]
 }
