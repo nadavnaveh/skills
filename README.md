@@ -632,6 +632,12 @@ The agent gets a document's text, not its page, so a line in white or tiny type 
 
 **[`/hidden-text-check`](./skills/hidden-text-check/SKILL.md)** reads a plain text copy of the document before the agent does, has a fresh subagent list every instruction inside without doing any, and runs a finder for white, tiny or hidden text in Word files, saying plainly what it cannot check.
 
+### "My stack choice doubled the tokens, and I never measured it."
+
+The same task can take an agent twice the tokens and rounds in one stack as in another. A single run cannot show it, because the next run of the same task can land far away.
+
+**[`/stack-compare`](./skills/stack-compare/SKILL.md)** runs one small task from your project three times on each of two options in throwaway copies, records the tokens, turns and cost of every run, builds or tests each result, and prints the median and spread per option with how many runs worked.
+
 Drafts live in [`skills/in-progress/`](./skills/in-progress/). They are not installed by the plugin until they are ready.
 
 ## Where these come from
