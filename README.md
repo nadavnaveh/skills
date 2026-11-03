@@ -88,7 +88,7 @@ The agent reads pages, emails and files as text, and a hidden line in that text 
 
 ### "My tokens run out, and the session gets slower the longer I work."
 
-Every message sends the whole conversation again: each file read, each long answer and each old task. So what you add once keeps costing on every turn after it.
+Every model request sends the whole conversation again: each file read, each long answer and each old task. So what you add once keeps costing on every request after it.
 
 **[`/token-savers`](./skills/token-savers/SKILL.md)** keeps the session small with five habits: clear between tasks, search before reading, read only the lines around the hit, ask for the length you need, and keep the opening the same so it is cached.
 

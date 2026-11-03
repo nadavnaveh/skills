@@ -8,7 +8,7 @@ description: Keeps a session small and cheap with five habits: a new session for
 The tokens ran out halfway through the day, and the session got slower with every message. Each message sends the whole conversation again: every file read, every long answer and every old task. This skill keeps that conversation small, so each message costs less.
 
 ## The principles
-1. Each message re-reads it all. Anything in the session is paid for again on every turn, so what you add once keeps costing.
+1. Each model request re-reads it all. Anything in the session is paid for again with every request, so what you add once keeps costing.
 2. New task, new session. An old task left in the session is paid for on every message of the new one.
 3. Find the line, then read it. Search for the word first, then read only the lines around it: 40 lines, not 4,000.
 4. Ask for the length you need. Five lines that answer cost less than a page that also answers.
